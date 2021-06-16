@@ -1,0 +1,428 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+// ==== FONTS ===========================================================================================
+@import "fonts";
+// ==== // FONTS ===========================================================================================
+
+// ==== VARS ===========================================================================================
+@import "vars";
+// ==== // VARS ===========================================================================================
+
+// ==== НОРМАЛАЙЗ ===========================================================================================
+@import "normalize";
+// ==== // НОРМАЛАЙЗ ===========================================================================================
+
+//<MIXINE>===============================================================================================
+@import "mixins.scss";
+//</MIXINE>===============================================================================================
+
+//<ICOMOON>===============================================================================================
+@import "../icomoon/style";
+//</ICOMOON>===============================================================================================
+
+//<FANCYBOX>===============================================================================================
+//@import "plagins/fancybox.scss";
+//<FANCYBOX>===============================================================================================
+
+// ==== PLAGINS ===========================================================================================
+@import "plagins/swiper-bundle";
+//@import "plagins/drift-basic";
+// ==== // PLAGINS ===========================================================================================
+
+// ==== FORM STYLE DEFAULT ===========================================================================================
+@import "forms";
+// ==== FORM STYLE DEFAULT ===========================================================================================
+
+// ==== BORDER ===========================================================================================
+@import "../common/burger/burger";
+// ==== BORDER ===========================================================================================
+
+// ==== POPUP ===========================================================================================
+@import "../common/popup/popup";
+// ==== // POPUP ===========================================================================================
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html {
+	font-size: 10px;
+	height: 100%;
+}
+html,
+body {
+	min-width: $minwidth;
+	margin: 0 auto;
+}
+body {
+	line-height: 1;
+	font-family: $mainFontFamily;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: $textColor;
+	font-size: 1.4rem;
+	transition: opacity 0.8s ease;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-height: 100%;
+
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+
+	&.lock {
+		overflow: hidden;
+	}
+
+	&.is-load {
+		& ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+._preload-body {
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	transition: all 0.6s ease 0.2s;
+
+	&:before {
+		position: absolute;
+		content: "";
+		z-index: 999;
+		top: 50%;
+		left: 50%;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		border: 4px solid #6e6e6e;
+		border-right: 4px solid #fff;
+		transform: translate(-50%, -50%);
+		animation: preloadBody 2s linear infinite;
+	}
+}
+
+@keyframes preloadBody {
+	from {
+		transform: translate(-50%, -50%) rotate(0);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+input,
+button,
+textarea {
+	font-family: $mainFontFamily;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.center {
+	text-align: center;
+}
+
+._page {
+	flex: 1 1 auto;
+	padding: 1px 0;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1340px;
+	margin: 0 auto;
+	padding: 0 25px;
+
+	@media (max-width: 375.98px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.ibg {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+// === title ========================================================================
+.title-1 {
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 139%;
+	margin-top: 0;
+	margin-bottom: 0;
+	@media (max-width: $md3+px) {
+		font-size: 20px;
+	}
+}
+.title-2 {
+	font-size: 39px;
+	line-height: 139%;
+	font-weight: 700;
+	letter-spacing: -0.03em;
+
+	@media (max-width: $md3+px) {
+		font-size: 32px;
+	}
+}
+
+.title-3 {
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 139%;
+
+	@media (max-width: $md3+px) {
+		font-size: 20px;
+		line-height: 137%;
+	}
+}
+
+.title-4 {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 139%;
+}
+
+.title-5 {
+}
+.title-6 {
+}
+
+.suptitle {
+}
+.subtitle {
+}
+
+.text {
+}
+// === and title ========================================================================
+
+// === btn ========================================================================
+.btn-default {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40px;
+	min-width: 156px;
+	padding: 8px 16px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: $mainColor2;
+	border-radius: 4px;
+	transition: all .3s ease;
+	cursor: pointer;
+	@media (min-width: 992px) {
+		&:hover {
+			background-color: $hover;
+		}
+	}
+}
+
+button.btn-default {
+}
+
+.plus {
+	position: relative;
+	width: 16px;
+	height: 16px;
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 3px;
+		height: 100%;
+		background-color: $mainColor2;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 100%;
+		height: 3px;
+		background-color: $mainColor2;
+	}
+}
+
+// === and btn ========================================================================
+
+.input {
+}
+
+.textarea {
+}
+
+.link {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 125%;
+	display: inline-flex;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	transition: all 0.3s ease;
+	@media (min-width: 992px) {
+		&:hover {
+			opacity: 0.6;
+
+			&:after {
+				transform: translateX(5px);
+			}
+		}
+	}
+
+	&:after {
+		font-family: "icomoon";
+		content: "\e905";
+		font-size: 12px;
+		margin-left: 4px;
+		transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+}
+
+// === TEXT CONTETN BLOCK ========================================================================
+.text-content {
+	& h1 {
+	}
+	& h2 {
+	}
+	& h3 {
+	}
+	& h4 {
+	}
+
+	& h5 {
+	}
+	& h6 {
+	}
+
+	& p {
+	}
+
+	& ul {
+	}
+
+	& ol {
+	}
+
+	& figure {
+	}
+}
+// === and TEXT CONTETN BLOCK ========================================================================
+
+// ==== BLOCKS =====================================================
+@import "../common/header/#header";
+@import "../common/footer/#footer";
+@import "../common/checkbox/checkbox";
+@import "../common/catalog/catalog";
+@import "../common/instagram/instagram";
+// ==== BLOCKS =====================================================
+
+// ==== PAGES =====================================================
+
+// ==== HOME =====================================================
+@import "pages/#home";
+// ==== AND HOME =====================================================
+
+// ==== AND PAGES =====================================================

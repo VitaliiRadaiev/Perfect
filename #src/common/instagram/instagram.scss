@@ -1,0 +1,47 @@
+.instagram {
+    margin-bottom: 76px;
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 23px;
+        color: $mainColor2;
+
+        & a {
+            color: $mainColor2;
+            transition: all .3s ease;
+
+            @media (min-width: 992px) {
+                &:hover {
+                    color: $hover;
+                }
+            }
+        }
+    }
+
+    &__images {
+        @media (max-width: $md3+px) {
+            & .swiper-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &__img {
+        @media (min-width: 768px) {
+            width: 288px;
+            height: 288px;
+        }
+
+        @media (max-width: $md3+px) {
+            flex: 0 1 50%;
+            height: 0;
+            padding-bottom: 50%;
+        }
+    }
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
