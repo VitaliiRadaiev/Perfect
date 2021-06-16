@@ -59,4 +59,4 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 //@@include('plagins/lazy-load.js');
-
+@@include('../common/address-block/address-block.js');
