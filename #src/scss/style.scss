@@ -28,7 +28,7 @@
 //</ICOMOON>===============================================================================================
 
 //<FANCYBOX>===============================================================================================
-//@import "plagins/fancybox.scss";
+@import "plagins/fancybox.scss";
 //<FANCYBOX>===============================================================================================
 
 // ==== PLAGINS ===========================================================================================
@@ -215,10 +215,23 @@ textarea {
 	flex-direction: column;
 }
 
+._padding-top {
+	margin-top: 173px;
+
+	@media (max-width: $md2+px) {
+		margin-top: 123px;
+	}
+
+	@media (max-width: $md4+px) {
+		margin-top: 105px;
+	}
+}
+
 .container {
 	max-width: 1340px;
 	margin: 0 auto;
 	padding: 0 25px;
+	width: 100%;
 
 	@media (max-width: 375.98px) {
 		padding-left: 15px;
@@ -239,6 +252,14 @@ textarea {
 }
 
 // === title ========================================================================
+.title {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 139%;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	color: $mainColor2;
+}
 .title-1 {
 	font-weight: 600;
 	font-size: 35px;
@@ -254,7 +275,8 @@ textarea {
 	line-height: 139%;
 	font-weight: 700;
 	letter-spacing: -0.03em;
-
+	text-transform: uppercase;
+	color: $mainColor2;
 	@media (max-width: $md3+px) {
 		font-size: 32px;
 	}
@@ -306,11 +328,24 @@ textarea {
 	color: #ffffff;
 	background: $mainColor2;
 	border-radius: 4px;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 	cursor: pointer;
 	@media (min-width: 992px) {
 		&:hover {
 			background-color: $hover;
+		}
+	}
+
+	&.btn-default_white {
+		background-color: #fff;
+		border: 1px solid $mainColor2;
+		color: $mainColor2;
+
+		@media (min-width: 992px) {
+			&:hover {
+				border-color: $hover;
+				color: #fff;
+			}
 		}
 	}
 }
@@ -324,7 +359,7 @@ button.btn-default {
 	height: 16px;
 	&:before {
 		position: absolute;
-		content: '';
+		content: "";
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
@@ -334,7 +369,7 @@ button.btn-default {
 	}
 	&:after {
 		position: absolute;
-		content: '';
+		content: "";
 		top: 50%;
 		left: 0;
 		transform: translateY(-50%);
@@ -383,6 +418,10 @@ button.btn-default {
 
 // === TEXT CONTETN BLOCK ========================================================================
 .text-content {
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: -0.03em;
+
 	& h1 {
 	}
 	& h2 {
@@ -398,6 +437,7 @@ button.btn-default {
 	}
 
 	& p {
+		margin-bottom: 1.5em;
 	}
 
 	& ul {
@@ -418,12 +458,12 @@ button.btn-default {
 @import "../common/catalog/catalog";
 @import "../common/instagram/instagram";
 @import "../common/address-block/address-block";
+@import "../common/breadcrumb/breadcrumb";
+@import "../common/viewed-products/viewed-products";
 // ==== BLOCKS =====================================================
 
 // ==== PAGES =====================================================
-
-// ==== HOME =====================================================
 @import "pages/#home";
-// ==== AND HOME =====================================================
-
+@import "pages/#catalog";
+@import "pages/#single-product";
 // ==== AND PAGES =====================================================

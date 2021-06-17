@@ -8,18 +8,22 @@ window.addEventListener('load', function () {
 	document.body.classList.add('is-load');
 
 	// ==== ADD PADDING-TOP ================================
-	// {
-	// 	let wrapper = document.querySelector('._page._padding-top');
-	// 	if (wrapper) {
-	// 		let header = document.querySelector('.header');
-	// 		if(header) {
-	// 			const setPedding = () => wrapper.style.paddingTop = header.clientHeight + 'px';
-	// 			setPedding();
-	// 			window.addEventListener('resize', setPedding);
-	// 		}
+	{
+		let wrapper = document.querySelector('._margin-top');
+		if (wrapper) {
+			let header = document.querySelector('.header');
+			if(!header.classList.contains('._is-scroll')) {
+				const setPedding = () => wrapper.style.marginTop = header.clientHeight - 1 + 'px';
+				setPedding();
+				window.addEventListener('resize', () => {
+					if(!header.classList.contains('._is-scroll')) {
+						setPedding();
+					}
+				});
+			}
 			
-	// 	}
-	// }
+		}
+	}
 	// ==== AND ADD PADDING-TOP ================================
 
 	@@include('_function.js');
@@ -30,6 +34,11 @@ window.addEventListener('load', function () {
 	@@include('../common/popup/popup.js');
 	@@include('../common/header/header.js');
 	@@include('../common/instagram/instagram.js');
+	@@include('../common/viewed-products/viewed-products.js');
+	
+	
+	
+	@@include('pages/#single-product.js');
 	
 });
 
