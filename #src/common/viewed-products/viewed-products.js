@@ -10,27 +10,24 @@ if($viewedProducts) {
             nextEl: $viewedProducts.querySelector('.viewed-products__btn-next'),
             prevEl: $viewedProducts.querySelector('.viewed-products__btn-prev'),
         },
-        /*
         breakpoints: {
             320: {
-                slidesPerView: 1,
-                spaceBetween: 0,
-                autoHeight: true,
+                slidesPerView: 2,
+                spaceBetween: 9,
             },
             768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
+                slidesPerView: 3,
+                spaceBetween: 9,
             },
             992: {
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 4,
+                spaceBetween: 9,
             },
             1268: {
-                slidesPerView: 4,
-                spaceBetween: 30,
+                slidesPerView: 5,
+                spaceBetween: 9,
             },
         },
-        */
     });
 }
 

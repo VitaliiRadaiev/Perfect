@@ -1127,27 +1127,24 @@ if($viewedProducts) {
             nextEl: $viewedProducts.querySelector('.viewed-products__btn-next'),
             prevEl: $viewedProducts.querySelector('.viewed-products__btn-prev'),
         },
-        /*
         breakpoints: {
             320: {
-                slidesPerView: 1,
-                spaceBetween: 0,
-                autoHeight: true,
+                slidesPerView: 2,
+                spaceBetween: 9,
             },
             768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
+                slidesPerView: 3,
+                spaceBetween: 9,
             },
             992: {
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 4,
+                spaceBetween: 9,
             },
             1268: {
-                slidesPerView: 4,
-                spaceBetween: 30,
+                slidesPerView: 5,
+                spaceBetween: 9,
             },
         },
-        */
     });
 }
 
@@ -1170,15 +1167,15 @@ if($cardsMini.length) {
 	
 	
 	let productSlider = document.querySelectorAll('.single-product__gallery');
-if(productSlider.length) {
+if (productSlider.length) {
     productSlider.forEach(slider => {
         let dataSlider;
         let dataSliderThumb;
         let gallery = slider.querySelector('.single-product__gallery-slider');
         let thumbs = slider.querySelector('.single-product__gallery-thumbs');
         let length = thumbs.querySelector('.swiper-wrapper').children.length;
-        
-        if(length > 4) {
+
+        if (length > 4) {
             thumbs.classList.add('_show-arrows');
             slider.classList.add('_show-arrows');
         }
@@ -1196,11 +1193,15 @@ if(productSlider.length) {
             spaceBetween: 10,
             loop: true,
             thumbs: {
-            swiper: dataSliderThumb,
+                swiper: dataSliderThumb,
             },
             navigation: {
                 nextEl: slider.querySelector('.single-product__gallery-btn-next'),
                 prevEl: slider.querySelector('.single-product__gallery-btn-prev'),
+            },
+            pagination: {
+                el: slider.querySelector('.swiper-pagination'),
+                clickable: true,
             },
         });
     })

@@ -15,6 +15,14 @@
         top: 0px;
         right: 48px;
         display: flex;
+
+        @media (max-width: $md3+px) {
+            top: auto;
+            right: auto;
+            bottom: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     &__btn {
@@ -64,6 +72,10 @@
     &__slider {
         padding: 8px;
         margin: -8px;
+
+        & .swiper-slide {
+            height: auto;
+        }
     }
 }
 
@@ -75,6 +87,11 @@
     transition: all 0.3s ease;
     padding: 20px;
     min-height: 173px;
+    height: 100%;
+
+    @media (max-width: $md3+px) {
+        padding: 20px 10px;
+    }
 
     @media (min-width: 992px) {
         &:hover {
@@ -82,12 +99,16 @@
         }
     }
     &__img {
-        flex: 0 0 75px;
+        flex: 0 0 36%;
         height: 110px;
         margin-right: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 8px;
+        }
 
         & img {
             max-width: 100%;
@@ -105,6 +126,10 @@
         color: #5e616b;
         margin-bottom: 14px;
         margin-top: -5px;
+
+        @media (max-width: $md3+px) {
+            font-size: 12px;
+        }
     }
 
     &__price {
@@ -113,5 +138,9 @@
         line-height: 139%;
         letter-spacing: -0.03em;
         color: #5e616b;
+
+        @media (max-width: $md3+px) {
+            font-size: 14px;
+        }
     }
 }
