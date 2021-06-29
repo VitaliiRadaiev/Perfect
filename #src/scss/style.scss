@@ -460,10 +460,13 @@ button.btn-default {
 @import "../common/address-block/address-block";
 @import "../common/breadcrumb/breadcrumb";
 @import "../common/viewed-products/viewed-products";
+@import "../common/price-slider/price-slider";
+@import "../common/filter/filter";
+@import "../common/pagination/pagging";
 // ==== BLOCKS =====================================================
 
 // ==== PAGES =====================================================
 @import "pages/#home";
-@import "pages/#catalog";
+@import "pages/#catalog-page";
 @import "pages/#single-product";
 // ==== AND PAGES =====================================================

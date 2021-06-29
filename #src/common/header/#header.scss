@@ -4,6 +4,7 @@
     left: 0;
     width: 100%;
     z-index: 501;
+    pointer-events: none;
 
     &._is-scroll {
         & .header__scroll {
@@ -20,6 +21,7 @@
     }
 
     &__top {
+      pointer-events: auto;
         transition: all 0.4s ease 0.5s;
     }
 
@@ -368,6 +370,7 @@
     }
 
     &__scroll {
+        pointer-events: auto;
         position: fixed;
         top: 0;
         left: 0;

@@ -3,7 +3,6 @@
 	if($checkboxWrap.length) {
 		$checkboxWrap.forEach((item, index) => {
 			let input = item.querySelector('input[type="checkbox"]');
-			input.checked = true;
 			item.querySelector('.checkbox-wrap__label').setAttribute('for', `_form${index}`)
 			input.id = `_form${index}`;
 			
@@ -11,7 +10,7 @@
 				item.classList.add('_is-checked');
 			}
 			
-			input.addEventListener('click', () => {
+			input.addEventListener('change', () => {
 				if(input.checked) {
 					item.classList.add('_is-checked');
 				} else {

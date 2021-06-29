@@ -1,0 +1,41 @@
+.catalog-page-2, .catalog-page-3 {
+    & .catalog.catalog_shop .catalog__list {
+        & > li {
+            flex: 0 1 100%;
+
+            &:before {
+                display: none;
+            }
+
+            @media (min-width: 992px) {
+                &:hover {
+                    & .p-card__title {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logos-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+
+    & > li {
+        padding: 0 30px;
+        flex: 0 1 16.666%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 57px;
+
+        & img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

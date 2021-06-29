@@ -1,0 +1,123 @@
+//===== filter slider =========================================================
+.price-filter {
+	margin-bottom: 14px;
+	padding-top: 7px;
+	&__slider {
+		height: 3px;
+		width: 95%;
+		margin: 0 auto 0px;
+	}
+
+	&__values {
+		margin-bottom: 44px;
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__input {
+		width: 100%;
+		flex: 0 1 calc(50% - 18px);
+		background: #ffffff;
+		border: 1px solid #dedede;
+		border-radius: 2px;
+		display: flex;
+		height: 25px;
+		align-items: center;
+		padding: 2px 7px;
+		font-size: 14px;
+		line-height: 100%;
+		letter-spacing: -0.03em;
+		color: $textColor;
+	}
+
+	&__btn-wrap {
+	}
+	&__btn {
+		cursor: pointer;
+		width: 100%;
+		min-height: 50px;
+		background-color: rgba(255, 255, 255, 0.278);
+		border: 2px solid #000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #000000;
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1.6px;
+		transition: all 0.2s ease;
+
+		@media (max-width: $md2+px) {
+			margin: 0 auto;
+		}
+	}
+
+	& .noUi-base {
+		position: relative;
+		height: 3px;
+		background: rgba($textColor, 0.1);
+
+		& .noUi-tooltip {
+			position: absolute;
+			transform: translateY(-23px) translateX(0%);
+			font-family: $mainFontFamily;
+			font-size: 13px;
+			line-height: 139%;
+			letter-spacing: -0.03em;
+			color: $textColor;
+			left: 0;
+		}
+	}
+
+	& .noUi-handle-lower {
+		right: -13px !important;
+	}
+
+	& .noUi-handle-upper {
+		& .noUi-tooltip {
+			position: absolute;
+			transform: translateY(-23px) translateX(0%);
+			right: 0;
+			left: auto;
+		}
+	}
+
+	& .noUi-origin,
+	.noUi-connect {
+		will-cange: transform;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		transform-origin: 0 0;
+		transform-style: flat;
+		width: 10%;
+		height: 10%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	& .noUi-connect {
+		background: $mainColor;
+		width: 100%;
+		height: 100%;
+	}
+
+	& .noUi-handle {
+		width: 17px;
+		height: 17px;
+		background: #fff;
+		border: 3px solid $mainColor;
+		border-radius: 50%;
+		position: absolute;
+		top: -8px;
+		right: -7px;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+}
+
+//===== AND filter slider =========================================================

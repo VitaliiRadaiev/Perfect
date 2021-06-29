@@ -175,53 +175,7 @@ if($('.anchor').length>0) {
 	});
 }
 
-
-function createTabs(containerName = false, triggersName = false, tabsName = false) {
-    let container = document.querySelector(`${containerName}`);
-    if(container) {
-       let allTriggers = document.querySelectorAll(`${triggersName}`);
-       let allTabs = document.querySelectorAll(`${tabsName}`);
-
-       if(!allTabs.length) {
-        let err = new Error('Tabs not found.');
-        throw err;
-       }
-
-       if(allTriggers.length) {
-           allTriggers.forEach(trigger => {
-               trigger.addEventListener('click', (e) => {
-                   e.preventDefault();
-                   const id = trigger.getAttribute('href').replace('#','');
-                  
-                   trigger.classList.add('active');
-
-                   allTriggers.forEach(i => {
-                       if(i == trigger) {
-                           return
-                       }
-                       i.classList.remove('active');
-                   });
-
-                   allTabs.forEach(tab => {
-                       if(tab.id == id) {
-                           tab.classList.add('active')
-                       } else {
-                           tab.classList.remove('active');
-                       }
-                   })
-                   
-               })
-           })
-       } else {
-        let err = new Error('Triggers not found.');
-        throw err;
-       }
-        
-    } else {
-      let err = new Error('Container not found.');
-      throw err;
-    }
-};
+;
 	// Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),position(digi),when(breakpoint)"
 // e.x. data-da="item,2,992"
@@ -809,65 +763,7 @@ if (quantityButtons.length > 0) {
 	}
 }
 // == // QUANTITY =====================================================
-
-// == PRICE SLIDER =====================================================
-let priceSlider = document.querySelector('.price-filter');
-
-if(priceSlider) {
-	let inputNumFrom = document.getElementById('priceStart');
-	let inputNumTo = document.getElementById('priceEnd');
-	let value = document.querySelector('.values-price-filter');
-
-	let min = value.dataset.min;
-	let max = value.dataset.max;
-	let numStart = value.dataset.start;
-	let numEnd = value.dataset.end;
-	noUiSlider.create(priceSlider, {
-		start: [+numStart, +numEnd],  
-		connect: true,
-		tooltips:[wNumb({decimals: 0, thousand: ','}) , wNumb({decimals: 0, thousand: ','})], 
-		range: {
-			'min': [+min],
-			'1%': [100,100],
-			'max': [+max],
-		}
-	});
-
-	priceSlider.noUiSlider.on('update', function (values, handle) {
-
-	    var value = values[handle];
-
-	    if (handle) {
-	        inputNumTo.value = Math.round(value);
-	    } else {
-	        inputNumFrom.value = Math.round(value);
-	    }
-	});
-
-	inputNumTo.onchange = function() {
-		setPriceValues()
-	}
-
-	inputNumFrom.onchange = function() {
-		setPriceValues()
-	}
-
-	function setPriceValues() {
-		let priceStartValue;
-		let priceEndValue;
-		if(inputNumFrom.value != '') {
-			priceStartValue = inputNumFrom.value;
-		}
-
-		if(inputNumTo.value != '') {
-			priceEndValue = inputNumTo.value;
-		}
-
-		  priceSlider.noUiSlider.set([priceStartValue, priceEndValue])
-	}
-}
-
-// == // PRICE SLIDER =====================================================;
+;
 	// === Burger Handler =====================================================================
 	function burgerBtnAnimation(e) {
 		$('.burger span:nth-child(1)').toggleClass('first');
@@ -890,7 +786,6 @@ if(priceSlider) {
 	if($checkboxWrap.length) {
 		$checkboxWrap.forEach((item, index) => {
 			let input = item.querySelector('input[type="checkbox"]');
-			input.checked = true;
 			item.querySelector('.checkbox-wrap__label').setAttribute('for', `_form${index}`)
 			input.id = `_form${index}`;
 			
@@ -898,7 +793,7 @@ if(priceSlider) {
 				item.classList.add('_is-checked');
 			}
 			
-			input.addEventListener('click', () => {
+			input.addEventListener('change', () => {
 				if(input.checked) {
 					item.classList.add('_is-checked');
 				} else {
@@ -1163,6 +1058,66 @@ if($cardsMini.length) {
 }
 
 ;
+	{
+    let priceSlider = document.querySelector('.price-filter__slider');
+    if (priceSlider) {
+        let inputNumFrom = document.getElementById('priceStart');
+        let inputNumTo = document.getElementById('priceEnd');
+        let value = document.querySelector('.values-price-filter');
+
+        let min = value.dataset.min;
+        let max = value.dataset.max;
+        let numStart = value.dataset.start;
+        let numEnd = value.dataset.end;
+        noUiSlider.create(priceSlider, {
+            start: [+numStart, +numEnd],
+            connect: true,
+            tooltips: [wNumb({ decimals: 0, thousand: ',' }), wNumb({ decimals: 0, thousand: ',' })],
+            range: {
+                'min': [+min],
+                '1%': [100, 100],
+                'max': [+max],
+            }
+        });
+
+        priceSlider.noUiSlider.on('update', function (values, handle) {
+
+            var value = values[handle];
+
+            if (handle) {
+                inputNumTo.value = Math.round(value);
+            } else {
+                inputNumFrom.value = Math.round(value);
+            }
+        });
+
+        inputNumTo.onchange = function () {
+            setPriceValues()
+        }
+
+        inputNumFrom.onchange = function () {
+            setPriceValues()
+        }
+
+        function setPriceValues() {
+            let priceStartValue;
+            let priceEndValue;
+            if (inputNumFrom.value != '') {
+                priceStartValue = inputNumFrom.value;
+            }
+
+            if (inputNumTo.value != '') {
+                priceEndValue = inputNumTo.value;
+            }
+
+            priceSlider.noUiSlider.set([priceStartValue, priceEndValue])
+        }
+    }
+
+
+}
+;
+	;
 	
 	
 	
