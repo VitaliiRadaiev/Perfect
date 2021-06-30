@@ -9,34 +9,121 @@
         margin-bottom: 40px;
         & .catalog__title {
             margin-bottom: 23px;
+            @media (max-width: $md3+px) {
+                font-size: 39px;
+            }
         }
         & .catalog__list {
             & > li {
                 flex: 0 1 25%;
+
+                @media (max-width: 1267.98px) {
+                    flex: 0 1 33.3333%;
+                }
+
+                @media (max-width: $md3+px) {
+                    flex: 0 1 50%;
+                }
+                @media (max-width: 575px) {
+                    flex: 0 1 100%;
+                }
             }
         }
 
         & .catalog__body {
-            display: flex;
+            @media (min-width: 992px) {
+                display: flex;
+            }
         }
     }
 
     &__col-1 {
-        flex: 0 0 237px;
-        margin-right: 21px;
+        margin-bottom: 20px;
+        @media (min-width: 992px) {
+            flex: 0 0 237px;
+            margin-right: 21px;
+            margin-bottom: 0;
+        }
     }
 
     &__col-2 {
         flex: 1 1 auto;
+        min-width: 0;
     }
 
     &__head {
         display: flex;
         align-items: center;
         margin-bottom: 7px;
+    }
 
-        & .select-wrap {
+    &__sort-filter {
+        & > a {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 139%;
+            letter-spacing: -0.03em;
+            color: #c4c4c4;
+            transition: all .3s ease;
+            padding-right: 21px;
+            position: relative;
             margin-right: 33px;
+
+            @media (max-width: $md3+px) {
+                font-size: 0;
+                padding-right: 17px;
+                margin-right: 8px;
+            }
+
+            &:before {
+                position: absolute;
+                font-family: "icomoon" !important;
+                content: "\e904";
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                transition: all .3s ease;
+
+                @media (max-width: $md3+px) {
+                    top: 58%;
+                    font-size: 16px;
+                }
+            }
+
+            & img, & svg {
+                @media (min-width: 768px) {
+                    display: none;
+                }
+            }
+
+            & svg {
+                & path {
+                    transition: all .3s ease;
+                    fill: #c4c4c4;
+                }
+            }
+
+            @media (min-width: 992px) {
+                &:hover {
+                    color:  #858585;
+
+                    & svg {
+                        & path {
+                            fill: #858585;
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                color: #3D4D66;
+
+                & svg {
+                    & path {
+                        fill: #3D4D66;
+                    }
+                }
+            }
         }
     }
 
@@ -46,6 +133,11 @@
         margin-left: auto;
         margin-right: 0px;
         transform: translateY(-5px);
+
+        @media (max-width: $md3+px) {
+            flex: 0 0 58px;
+        }
+
         & > a {
             display: flex;
             justify-content: center;
@@ -85,6 +177,12 @@
                     & rect {
                         fill: #fff;
                     }
+                }
+            }
+
+            &:last-child {
+                @media (max-width: $md3+px) {
+                    display: none;
                 }
             }
         }
@@ -414,35 +512,79 @@
     display: flex;
     padding: 20px 20px 17px;
 
+    @media (max-width: $md3+px) {
+        padding: 44px 10px 10px;
+        flex-wrap: wrap;
+    }
+
     &__col-1 {
         flex: 0 0 calc(13% + 53px);
         margin-right: 25px;
+
+        @media (max-width: $md3+px) {
+            flex: 0 0 85px;
+            margin-right: 7px;
+        }
     }
 
     &__col-2 {
         flex: 1 1 auto;
         margin-right: 25px;
+
+        @media (max-width: $md3+px) {
+            flex: 0 1 calc(100% - 92px);
+            margin-right: 0;
+        }
     }
 
     &__col-3 {
         flex: 0 0 171px;
 
+        @media (max-width: $md3+px) {
+            flex: 0 1 100%;
+            position: relative;
+            text-align: center;
+
+
+            & .p-card__btn-order.btn-default {
+                width: 100%;
+            }
+        }
+
         & .p-card__price {
-            padding-top: 6px;
             margin-bottom: 18px;
+
+            @media (min-width: 768px) {
+                padding-top: 6px;
+            }
         }
     }
 
     &__label {
         top: 11px;
         left: 11px;
+
+        @media (max-width: $md3+px) {
+            min-width: 85px;
+            text-align: center;
+        }
     }
 
     &__img {
         height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+
+        & > a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: $md3+px) {
+            height: 108px;
+        }
 
         & img {
             width: auto;
@@ -455,19 +597,26 @@
     &__title {
         text-align: left;
         margin-bottom: 8px;
-        padding-top: 11px;
+
+        @media (min-width: 768px) {
+            padding-top: 11px;
+        }
     }
 
     &__group {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 13px;
+        margin-bottom: 8px;
+
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 13px;
+        }
 
         & .p-card__status {
             margin-right: 29px;
             padding-left: 21px;
-
+            display: inline-block;
 
             &:before {
                 transform: translate(0, -50%);
@@ -477,6 +626,14 @@
         & .p-card__status,
         & .p-card__vendor-code {
             margin-bottom: 10px;
+
+
+        }
+
+        & .p-card__vendor-code {
+            @media (max-width: $md3+px) {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -490,20 +647,41 @@
 
     &__detail {
         padding-bottom: 14px;
-        border-bottom: 1px solid #c4c4c4;
         margin-bottom: 10px;
+        border-top: 1px solid #c4c4c4;
+        padding-top: 10px;
+
+        @media (min-width: 768px) {
+            padding-top: 0;
+            border-bottom: 1px solid #c4c4c4;
+            border-top: none;
+        }
+        
+        @media (max-width: $md3+px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__detail-collapse {
         display: none;
+
+        @media (max-width: $md3+px) {
+            padding-top: 20px;
+            margin-bottom: 10px;
+        }
     }
 
     &__table {
         font-size: 14px;
         line-height: 1.2em;
         width: 100%;
-        max-width: 400px;
         border-collapse: collapse;
+        text-align: left;
+
+        @media (min-width: 768px) {
+            max-width: 400px;
+        }
 
         & td {
             width: 50%;
@@ -547,6 +725,12 @@
         position: relative;
         padding-right: 15px;
         display: inline-block;
+
+        @media (max-width: $md3+px) {
+            margin-left: auto;
+            margin-right: 12px;
+            padding-right: 20px;
+        }
 
         &:after {
             position: absolute;
@@ -593,6 +777,12 @@
         &.p-card__star {
             opacity: 1;
         }
+
+        @media (max-width: $md3+px) {
+            position: absolute;
+            top: 5px;
+            left: 7px;
+        }
     }
 }
 
@@ -601,6 +791,12 @@
     padding: 20px 20px 22px;
     align-items: center;
 
+    @media (max-width: $md3+px) {
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+
     &__img {
         height: 74px;
         margin-right: 51px;
@@ -608,7 +804,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
+        @media (max-width: $md3+px) {
+            margin-right: 10px;
+            height: 140px;
+        }
 
         & img {
             width: auto;
@@ -622,10 +822,17 @@
         flex: 1 1 auto;
         margin-right: 25px;
 
+        @media (max-width: $md3+px) {
+            margin-right: 0;
+        }
+
         & .p-card__title {
             padding-top: 11px;
-            text-align: left;
             margin-bottom: 2px;
+
+            @media (min-width: 768px) {
+                text-align: left;
+            }
         }
 
         & .p-card__status {
@@ -633,6 +840,10 @@
             margin-right: 29px;
             padding-left: 21px;
 
+            @media (max-width: $md3+px) {
+                margin-right: 22px;
+                margin-bottom: 30px;
+            }
 
             &:before {
                 transform: translate(0, -50%);
@@ -640,18 +851,46 @@
         }
     }
 
+    &__flex-group {
+        text-align: center;
+        margin-right: 37px;
+        flex: 0 0 auto;
+
+        @media (min-width: 1268px) {
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: $md3+px) {
+            flex: 0 1 100%;
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+
     & .p-card__price {
         margin-left: auto;
         flex: 0 0 auto;
-        margin-right: 46px;
+        margin-bottom: 10px;
+
+        @media (min-width: 1268px) {
+            margin-bottom: 0;
+            margin-right: 46px;
+
+        }
     }
 
     & .p-card__btn-order {
         flex: 0 0 auto;
-        margin-right: 37px;
+
+        @media (max-width: $md3+px) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
     }
 
     & .p-card__star {
+        flex: 0 0 auto;
         position: static;
         display: inline-flex;
         align-items: center;
@@ -665,10 +904,5 @@
         & svg {
             margin-right: 5px;
         }
-
- 
-            
- 
     }
 }
-

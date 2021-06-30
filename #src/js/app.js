@@ -38,6 +38,7 @@ window.addEventListener('load', function () {
 	@@include('../common/price-slider/price-slider.js');
 	@@include('../common/filter/filter.js');
 	@@include('../common/catalog/catalog.js');
+	@@include('../common/logos-list/logos-list.js');
 	
 	
 	

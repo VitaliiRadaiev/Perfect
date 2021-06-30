@@ -1117,19 +1117,76 @@ if($cardsMini.length) {
 
 }
 ;
-	;
+	{
+    let filterTitle = document.querySelector('.filter__item_1');
+    let filterMobileCollapse = document.querySelector('.filter__mobile-collapse');
+    if(filterTitle && filterMobileCollapse) {
+        filterTitle.addEventListener('click', () => {
+            if(document.documentElement.clientWidth < 992) {
+                filterTitle.classList.toggle('active')
+                _slideToggle(filterMobileCollapse, 400)
+            }
+        })
+    }
+};
 	let cardDetailItems = document.querySelectorAll('.p-card-2__detail');
 if(cardDetailItems.length) {
     cardDetailItems.forEach(item => {
         let text = item.querySelector('.p-card-2__detail-collapse');
         let title = item.querySelector('.p-card-2__detail-title');
+        let parent = item.closest('.p-card-2');
+        let col3 = parent.querySelector('.p-card-2__col-3');
+        let star = parent.querySelector('.p-card-2__star');
         if(text && title) {
             title.addEventListener('click', () => {
                 title.classList.toggle('is-open');
                 _slideToggle(text, 400);
             })
         }
+
+        if(parent && col3 && document.documentElement.clientWidth < 768 && star) {
+            col3.prepend(item)
+            col3.prepend(star)
+        }
     })
+};
+	{
+	const slider = document.querySelector('.logos-list');
+	if(slider) {
+		let mySwiper;
+
+		function mobileSlider() {
+			if(document.documentElement.clientWidth <= 767 && slider.dataset.mobile == 'false') {
+				mySwiper = new Swiper(slider, {
+					slidesPerView: 3,
+					speed: 600,
+					pagination: {
+					    el: slider.querySelector('.swiper-pagination'),
+					    clickable: true,
+					  },
+				});
+
+				slider.dataset.mobile = 'true';
+
+				//mySwiper.slideNext(0);
+			}
+
+			if(document.documentElement.clientWidth > 767) {
+				slider.dataset.mobile = 'false';
+
+				if(slider.classList.contains('swiper-container-initialized')) {
+					mySwiper.destroy();
+				}
+			}
+		}
+
+		mobileSlider();
+
+		window.addEventListener('resize', () => {
+			mobileSlider();
+		})
+	}
+
 };
 	
 	
