@@ -1,8 +1,8 @@
 {
     let priceSlider = document.querySelector('.price-filter__slider');
     if (priceSlider) {
-        let inputNumFrom = document.getElementById('priceStart');
-        let inputNumTo = document.getElementById('priceEnd');
+        let inputNumFrom = document.querySelector('.price-filter__input-start');
+        let inputNumTo = document.querySelector('.price-filter__input-end');
         let value = document.querySelector('.values-price-filter');
 
         let min = value.dataset.min;
@@ -21,7 +21,6 @@
         });
 
         priceSlider.noUiSlider.on('update', function (values, handle) {
-
             var value = values[handle];
 
             if (handle) {
@@ -31,13 +30,19 @@
             }
         });
 
-        inputNumTo.onchange = function () {
-            setPriceValues()
-        }
+        priceSlider.noUiSlider.on('change', () => {
+            let event = new Event("change", {bubbles: true}); 
+            inputNumFrom.dispatchEvent(event);
+            inputNumTo.dispatchEvent(event);
+        })
 
-        inputNumFrom.onchange = function () {
+        inputNumTo.addEventListener('change', () => {
             setPriceValues()
-        }
+        })
+
+        inputNumFrom.addEventListener('change',() => {
+            setPriceValues()
+        })
 
         function setPriceValues() {
             let priceStartValue;
@@ -52,7 +57,7 @@
 
             priceSlider.noUiSlider.set([priceStartValue, priceEndValue])
         }
-    }
 
+    }
 
 }
