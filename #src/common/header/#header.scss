@@ -23,6 +23,14 @@
     &__top {
       pointer-events: auto;
         transition: all 0.4s ease 0.5s;
+
+        & .menu__link {
+            @media (min-width: 992px) {
+                &.current-menu-item {
+                    background-color: $hover2;
+                }
+            }
+        }
     }
 
     &__bg {
@@ -152,7 +160,7 @@
 
         @media (min-width: 992px) {
             &:hover {
-                opacity: 0.6;
+                color: $hover;
             }
         }
     }
@@ -167,7 +175,7 @@
 
         @media (min-width: 992px) {
             &:hover {
-                opacity: 0.6;
+                color: $hover;
             }
         }
 
@@ -227,9 +235,16 @@
             margin-top: -5px;
         }
 
+        & svg path {
+            transition: all .3s ease;
+        }
+
         @media (min-width: 992px) {
             &:hover {
-                opacity: 0.6;
+                & svg path {
+                    fill: $hover;
+                }
+                color: $hover;
             }
         }
     }
@@ -250,13 +265,25 @@
 
         @media (min-width: 992px) {
             &:hover {
-                opacity: 0.6;
+                color: $hover;
+
+                & svg {
+                    & path {
+                        fill: $hover;
+                    }
+                }
             }
         }
         & img,
         & svg {
             height: 26px;
             width: auto;
+        }
+
+        & svg {
+            & path {
+                transition: all .3s ease;
+            }
         }
 
         @media (max-width: $md2+px) {
@@ -360,11 +387,19 @@
             }
         }
 
+        & svg path {
+            transition: all .3s ease;
+        }
+
         @media (min-width: 992px) {
             flex: 1 1 auto;
             border-right: 1px solid rgba(#0c1b31, 0.4);
             &:hover {
                 background-color: $hover;
+
+                & svg path {
+                    fill: $hover;
+                }
             }
         }
     }
@@ -455,7 +490,8 @@
 
             @media (min-width: 992px) {
                 &:hover {
-                    background-color: transparent;
+                    background-color: transparent !important;
+                    color: #fff;
                     &:after {
                         width: 100%;
                     }
@@ -556,7 +592,7 @@
 
         @media (min-width: 992px) {
             &:hover {
-                background-color: $hover;
+                background-color: $hover !important;
             }
         }
 

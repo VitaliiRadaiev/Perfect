@@ -4056,6 +4056,12 @@ textarea {
   margin-top: -5px;
 }
 
+.header__sign-in svg path {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
 .header__basket-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4081,6 +4087,12 @@ textarea {
 .header__icon svg {
   height: 26px;
   width: auto;
+}
+
+.header__icon svg path {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .header__label {
@@ -4171,6 +4183,12 @@ textarea {
 .header__search img {
   height: 28px;
   width: 28px;
+}
+
+.header__search svg path {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .header__scroll {
@@ -8526,20 +8544,32 @@ textarea {
     transition: all 0.4s ease;
   }
 
+  .header__top .menu__link.current-menu-item {
+    background-color: #9D8660;
+  }
+
   .header__phone:hover {
-    opacity: 0.6;
+    color: #E3CA9F;
   }
 
   .header__whatsapp:hover {
-    opacity: 0.6;
+    color: #E3CA9F;
   }
 
   .header__sign-in:hover {
-    opacity: 0.6;
+    color: #E3CA9F;
+  }
+
+  .header__sign-in:hover svg path {
+    fill: #E3CA9F;
   }
 
   .header__icon:hover {
-    opacity: 0.6;
+    color: #E3CA9F;
+  }
+
+  .header__icon:hover svg path {
+    fill: #E3CA9F;
   }
 
   .header__burger {
@@ -8557,8 +8587,13 @@ textarea {
     background-color: #E3CA9F;
   }
 
+  .header__search:hover svg path {
+    fill: #E3CA9F;
+  }
+
   .header__scroll .menu__link:hover {
-    background-color: transparent;
+    background-color: transparent !important;
+    color: #fff;
   }
 
   .header__scroll .menu__link:hover:after {
@@ -8595,7 +8630,7 @@ textarea {
   }
 
   .menu__link:hover {
-    background-color: #E3CA9F;
+    background-color: #E3CA9F !important;
   }
 
   .menu__link {
@@ -8696,7 +8731,7 @@ textarea {
   }
 
   .subscribe-form__submit:hover {
-    background-color: #0E3C67;
+    background-color: #9D8660;
   }
 
   .subscribe-form__text a:hover {
@@ -8968,7 +9003,7 @@ textarea {
   }
 
   .aside__list > li > a:hover {
-    color: rgba(61, 77, 102, 0.7);
+    color: #9D8660;
   }
 }
 
