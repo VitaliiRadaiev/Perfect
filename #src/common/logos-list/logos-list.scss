@@ -5,6 +5,15 @@
         margin-bottom: 40px;
         padding-bottom: 55px;
     }
+
+    &.logos-list_vertical {
+        & .swiper-wrapper {
+            @media (min-width: 992px) {
+                display: block;
+            }
+        }
+    }
+
     & .swiper-wrapper {
         @media (min-width: 768px) {
             width: auto;

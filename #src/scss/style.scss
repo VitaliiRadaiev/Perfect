@@ -473,22 +473,17 @@ button.btn-default {
 		letter-spacing: -0.03em;
 		color: #3d4d66;
 		margin-bottom: 0.67em;
-		padding-left: 38px;
-		position: relative;
-
+		display: flex;
 		@media (max-width: $md3+px) {
 			font-size: 22px;
 			line-height: 140%;
 		}
 
 		& img {
-			position: absolute;
-			top: 4px;
-			left: 0;
 			display: inline-block;
 			max-height: 32px;
 			width: auto;
-			max-width: 32px;
+			margin-right: 8px;
 		}
 	}
 	& h6 {
@@ -531,9 +526,7 @@ button.btn-default {
 			}
 		}
 
-		&:last-child {
-			margin-bottom: 0;
-		}
+
 	}
 
 	& ul {
@@ -650,6 +643,35 @@ button.btn-default {
 				}
 			}
 		}
+
+		& > img {
+			display: block;
+			width: 100%;
+			height: 380px;
+			object-fit: cover;
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+			
+		}
+	}
+
+	& .list {
+		margin-top: 3em;
+		& .row {
+			margin-bottom: 3.93em;
+
+			@media (max-width: $md3+px) {
+				margin-bottom: 2.93em;
+			}
+			& [class^="col"] {
+				& img {
+					height: 100%;
+				}
+			}
+		}
 	}
 }
 // === and TEXT CONTETN BLOCK ========================================================================
@@ -675,4 +697,5 @@ button.btn-default {
 @import "pages/#catalog-page";
 @import "pages/#single-product";
 @import "pages/#service";
+@import "pages/#about";
 // ==== AND PAGES =====================================================

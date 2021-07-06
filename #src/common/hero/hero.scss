@@ -48,6 +48,10 @@
         @media (max-width: $md3+px) {
             padding: 20px;
             margin: 0;
+
+            &:empty {
+                display: none;
+            }
         }
         
         & img {
