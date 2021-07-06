@@ -3,3 +3,4 @@
 @@include('plagins/fancybox.min.js');
 @@include('plagins/nouislider.js');
 @@include('plagins/wNumb.min.js');
+@@include('libs/inputmask.min.js');
