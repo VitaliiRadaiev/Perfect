@@ -15,9 +15,13 @@
 @import "vars";
 // ==== // VARS ===========================================================================================
 
-// ==== НОРМАЛАЙЗ ===========================================================================================
+// ==== normalize ===========================================================================================
 @import "normalize";
-// ==== // НОРМАЛАЙЗ ===========================================================================================
+// ==== // normalize ===========================================================================================
+
+// ==== bootsrap grid ===========================================================================================
+@import "bootstrap-grid.min";
+// ==== // bootsrap grid ===========================================================================================
 
 //<MIXINE>===============================================================================================
 @import "mixins.scss";
@@ -228,14 +232,14 @@ textarea {
 }
 
 .container {
-	max-width: 1340px;
+	max-width: 1340px !important;
 	margin: 0 auto;
-	padding: 0 25px;
+	padding: 0 25px !important;
 	width: 100%;
 
 	@media (max-width: 375.98px) {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
 	}
 }
 
@@ -422,31 +426,230 @@ button.btn-default {
 	line-height: 150%;
 	letter-spacing: -0.03em;
 
+	@media (max-width: $md3+px) {
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 150%;
+	}
+
 	& h1 {
 	}
 	& h2 {
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 150%;
+		letter-spacing: -0.03em;
+		color: #3d4d66;
+		margin-bottom: 0.5em;
+
+		@media (max-width: $md3+px) {
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 140%;
+		}
 	}
+
 	& h3 {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 150%;
+		letter-spacing: -0.03em;
+		color: #bca47c;
+		margin-bottom: 0.5em;
+
+		@media (max-width: $md3+px) {
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 150%;
+		}
 	}
 	& h4 {
 	}
 
 	& h5 {
+		font-weight: bold;
+		font-size: 23px;
+		line-height: 150%;
+		letter-spacing: -0.03em;
+		color: #3d4d66;
+		margin-bottom: 0.67em;
+		padding-left: 38px;
+		position: relative;
+
+		@media (max-width: $md3+px) {
+			font-size: 22px;
+			line-height: 140%;
+		}
+
+		& img {
+			position: absolute;
+			top: 4px;
+			left: 0;
+			display: inline-block;
+			max-height: 32px;
+			width: auto;
+			max-width: 32px;
+		}
 	}
 	& h6 {
 	}
 
 	& p {
 		margin-bottom: 1.5em;
+
+		& ~ h2 {
+			margin-top: 1.6em;
+		}
+
+		& ~ h5 {
+			margin-top: 1em;
+		}
+
+		&.text-big {
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 150%;
+			letter-spacing: -0.03em;
+			margin-bottom: 1.3em;
+
+			@media (max-width: $md3+px) {
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 150%;
+			}
+		}
+
+		& a {
+			color: $mainColor2;
+			text-decoration: underline;
+			transition: all 0.3s ease;
+
+			@media (min-width: 992px) {
+				&:hover {
+					color: rgba($mainColor2, 0.7);
+				}
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	& ul {
+		margin-bottom: 1.5em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		& > li {
+			position: relative;
+			padding-left: 15px;
+
+			&:before {
+				position: absolute;
+				content: "•";
+				top: 0px;
+				left: 0;
+			}
+		}
 	}
 
 	& ol {
 	}
 
 	& figure {
+		margin: 3.6em 0 2em;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 10px;
+		}
+
+
+		& img {
+			width: 100%;
+			height: auto;
+
+			@media (max-width: $md3+px) {
+				min-height: 181px;
+				object-fit: cover;
+			}
+		}
+	}
+
+	& table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 26px 0 70px;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 37px;
+		}
+		& th {
+			height: 41px;
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 222%;
+			letter-spacing: -0.03em;
+			text-transform: uppercase;
+			color: #8c8c8c;
+			text-align: right;
+
+			@media (max-width: $md3+px) {
+				font-size: 12px;
+				line-height: 150%;
+			}
+
+			&:first-child {
+				text-align: left;
+			}
+		}
+
+		& td {
+			height: 33px;
+			border-top: 1px solid #c4c4c4;
+			border-bottom: 1px solid #c4c4c4;
+			text-align: right;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 1.2em;
+			letter-spacing: -0.03em;
+
+			@media (max-width: $md3+px) {
+				font-size: 12px;
+			}
+
+			&:first-child {
+				text-align: left;
+			}
+		}
+
+		& tr {
+			&:nth-child(even) {
+				& td {
+					background: rgba(#c4c4c4, 0.2);
+				}
+			}
+		}
+	}
+
+	& .row {
+		margin-left: -7.5px;
+		margin-right: -7.5px;
+		margin-bottom: 34px;
+	}
+
+	& [class^="col"] {
+		padding: 0 7.5px;
+
+		&:not(:first-child) {
+			@media (max-width: $md3+px) {
+				& > h5 {
+					margin-top: 1em;
+				}
+			}
+		}
 	}
 }
 // === and TEXT CONTETN BLOCK ========================================================================
@@ -464,10 +667,12 @@ button.btn-default {
 @import "../common/filter/filter";
 @import "../common/pagination/pagging";
 @import "../common/logos-list/logos-list";
+@import "../common/hero/hero";
 // ==== BLOCKS =====================================================
 
 // ==== PAGES =====================================================
 @import "pages/#home";
 @import "pages/#catalog-page";
 @import "pages/#single-product";
+@import "pages/#service";
 // ==== AND PAGES =====================================================

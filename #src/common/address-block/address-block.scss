@@ -6,6 +6,64 @@
         padding-bottom: 39px;
     }
 
+    &.address-block_v2 {
+        background: transparent;
+        padding: 0;
+        margin-bottom: 0;
+
+        @media (min-width: 768px) {
+            & .address-block__body {
+                display: block;
+                margin: 0;
+            }
+
+            & .address-block__title {
+                font-weight: bold;
+                font-size: 35px;
+                line-height: 150%;
+                letter-spacing: -0.03em;
+                margin-bottom: 29px;
+                text-transform: none;
+            }
+    
+
+            & .address-block__item {
+                display: flex;
+                flex-direction: row;
+                padding: 35px 0 0;
+                border-top: 1px solid #c4c4c4;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+    
+            & .address-block__item-head {
+                flex: 1 1 auto;
+                padding-right: 20px;
+            }
+    
+            & .address-block__item-map {
+                flex: 0 0 65.5%;
+            }
+        }
+
+        & .address-block__body {
+            display: block;
+            margin: 0;
+        }
+
+        & .address-block__item {
+            padding: 35px 0 0;
+            border-top: 1px solid #c4c4c4;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
     &__title {
         text-transform: uppercase;
         color: $mainColor2;

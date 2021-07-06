@@ -1,0 +1,137 @@
+.service-page {
+    & .breadcrumb {
+        margin-bottom: 10px;
+    }
+}
+
+.subhero-content {
+    position: relative;
+    margin-bottom: 30px;
+
+    @media (max-width: $md3+px) {
+        margin-bottom: 42px;
+    }
+
+    @media (min-width: 992px) {
+        display: flex;
+    }
+
+    &__decor {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        transform: translateX(-40%);
+        height: 420px;
+        width: 420px;
+        z-index: -1;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__aside {
+        flex: 0 0 305px;
+
+
+        @media (min-width: 992px) {
+            margin-right: 25px;
+            display: flex;
+            flex-direction: column;
+
+            &._flex-end {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    &__body {
+        flex: 1 1 auto;
+    }
+}
+
+.aside {
+    background: #e9e9e9;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    width: 100%;
+
+
+    @media (max-width: $md2+px) {
+        position: relative;
+        top: 0 !important;
+        max-width: none !important;
+        margin-bottom: 26px;
+        z-index: 6;
+    }
+
+    &._fixed {
+        @media (min-width: 992px) {
+            position: fixed;
+            z-index: 50;
+
+            &._static {
+                position: static;
+            }
+        }
+    }
+
+    &__mobile-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 54px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 139%;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #3d4d66;
+        border-radius: 4px 4px 0 0;
+
+        @media (min-width: 992px) {
+            display: none;
+
+        }
+
+        &.active {
+            background-color: $mainColor2;
+            transition: all .3s ease;
+            color: #fff;
+        }
+    }
+
+    &__list {
+        padding: 22px 19px 27px;
+        
+        @media (max-width: $md2+px) {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #e9e9e9;
+            border: 1px solid #dcdcdc;
+            border-radius: 0 0 4px 4px;
+        }
+
+        & > li {
+
+            & > a {
+                font-size: 17px;
+                line-height: 219%;
+                letter-spacing: -0.03em;
+                text-decoration-line: underline;
+                color: #3d4d66;
+                transition: all .3s ease;
+
+                @media (min-width: 992px) {
+                    &:hover {
+                        color: rgba(#3d4d66, 0.7);
+                    }
+                }
+            }
+        }
+    }
+}
