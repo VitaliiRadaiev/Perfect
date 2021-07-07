@@ -39,6 +39,7 @@ window.addEventListener('load', function () {
 	@@include('../common/filter/filter.js');
 	@@include('../common/catalog/catalog.js');
 	@@include('../common/logos-list/logos-list.js');
+	@@include('../common/quantity/quantity.js');
 	
 	
 	
