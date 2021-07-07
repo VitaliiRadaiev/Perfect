@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	@@include('common/header/_header.html',{})
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page cabinet-registr-page _padding-top">
+		<div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Авторизация</a>
+                </li>
+                <li>
+					Регистрация
+                </li>
+
+            </ul>
+        </div>
+
+		<section class="cabinet-registr">
+			<div class="container">
+				<h2 class="cabinet-registr__title title-2">регистрация</h2>
+				<div class="cabinet-registr__body">
+					<div class="cabinet-registr__content">
+						<div class="cabinet-registr__text text-content">
+							<p>Зарегистрируйтесь, чтобы использовать все возможности личного кабинета: отслеживание заказов, настройку подписки, связи с социальными сетями и другие.</p>
+							<p>Уже зарегистрированы? <a href="#">Войдите в личный кабинет.</a></p>
+							<p>Мы никогда и ни при каких условиях не разглашаем личные данные клиентов. Контактная информация будет использована только для оформления заказов и более удобной работы с сайтом.</p>
+						</div>
+						<form action="#" class="cabinet-registr__form form">
+								<div class="form__item">
+									<label class="form__label input-item">
+										<span>Фамилия <span>*</span></span>
+										<input type="text" class="form__input input">
+									</label>
+								</div>
+								<div class="form__item">
+									<label class="form__label input-item">
+										<span>Имя<span>*</span></span>
+										<input type="text" class="form__input input">
+									</label>
+								</div>
+								<div class="form__item">
+									<label class="form__label input-item">
+										<span>Отчество</span>
+										<input type="text" class="form__input input">
+									</label>
+								</div>
+								<div class="form__item">
+									<label class="form__label input-item">
+										<span>E-mail <span>*</span></span>
+										<input type="email" class="form__input input">
+									</label>
+								</div>
+								<div class="form__item">
+									<label class="form__label input-item">
+										<span>Пароль <span>*</span></span>
+										<input type="password" class="form__input input">
+									</label>
+								</div>
+								<div class="form__item">
+									<label class="form__label input-item">
+										<span>Подтверждение пароля   * <span>*</span></span>
+										<input type="password" class="form__input input">
+									</label>
+								</div>
+								<div class="form__item">
+									<label class="form__label input-item">
+										<span>Имя <span>*</span></span>
+										<input type="text" class="form__input input">
+									</label>
+								</div>
+
+				
+								<div class="form__item form__item_valid ">
+									<label class="form__label input-item">
+										<span>Введите текст с картинки <span>*</span></span>
+										<div class="form__valid-img">
+											<img src="img/photo/valid-img.jpg" alt="">
+										</div>
+										<a href="#" class="form__reload">
+											<img src="img/icons/reload.svg" alt="">
+										</a>
+										<input type="text" class="form__input input">
+									</label>
+								</div>
+								<button class="form__submit btn-default" type="submit">Зарегистрироваться</button>
+								<div class="form__agreement">
+									Нажимая кнопку вы соглашаетесь  <a href="#">с политикой конфиденциальности</a>
+								</div>
+						</form>
+					</div>
+					<div class="cabinet-registr__aside">
+						<div class="social">
+							<div class="social__text">Войти как пользователь</div>
+							<ul class="social__list">
+								<li>
+									<a href="">
+										<img src="img/icons/vk.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/icons/facebook2.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/icons/classmates.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/icons/mailru.svg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+	@@include('common/popup/_popup.html',{})
+	@@include('common/popup/_log-in.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

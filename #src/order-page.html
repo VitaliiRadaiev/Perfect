@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	@@include('common/header/_header.html',{})
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page order-page _padding-top">
+		<div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    Корзина
+                </li>
+            </ul>
+        </div>
+
+        <section class="order">
+            <div class="container">
+                <h2 class="order__title title-2"></h2>
+
+                <div class="order__body">
+                    <div class="order__content">
+                        <div class="order__box-1 box">
+                            <div class="box__head">
+                                <div class="box__col-1">
+                                    <h3 class="order__title-3 title-3">Товары в заказе</h3>
+                                </div>
+                                <div class="box__col-2">
+                                    <a href="#" class="order__link">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="box__content">
+                                <div class="order__products">
+                                    <ul class="catalog__list">
+                                        <li>
+                                            <div class="order-p-card p-card-3">
+                                                <div class="p-card-3__img">
+                                                    <img src="img/photo/watch2.png" alt="">
+                                                </div>
+                                                <div class="p-card-3__text">
+                                                    <a href="#" class="p-card__title">
+                                                        longines spirit l3.811.4.73.6
+                                                    </a>
+                                                    <div class="p-card__vendor-code">
+                                                        Артикул: L3.811.4.73.6
+                                                    </div>
+                                                </div>
+                                                <div class="p-card-3__quantity">
+                                                    @@include('common/quantity/_quantity.html',{})
+                                                </div>
+                                                <div class="p-card__price">176 500 ₽</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="order-p-card p-card-3">
+                                                <div class="p-card-3__img">
+                                                    <img src="img/photo/watch2.png" alt="">
+                                                </div>
+                                                <div class="p-card-3__text">
+                                                    <a href="#" class="p-card__title">
+                                                        longines spirit l3.811.4.73.6
+                                                    </a>
+                                                    <div class="p-card__vendor-code">
+                                                        Артикул: L3.811.4.73.6
+                                                    </div>
+                                                </div>
+                                                <div class="p-card-3__quantity">
+                                                    @@include('common/quantity/_quantity.html',{})
+                                                </div>
+                                                <div class="p-card__price">176 500 ₽</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order__coupon border-bottom">
+                                    <label class="basket__coupon">
+                                        <span>Введите код купона для скидки</span>
+                                        <input type="text" class="basket__coupon-input input">
+                                    </label>
+                                </div>
+                                <div class="order__btn-group">
+                                    <div class="order__btn-group-col-1"></div>
+                                    <div class="order__btn-group-col-2">
+                                        <a href="#" class="order__btn btn-default">
+                                            далее
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__aside">
+                        <div class="price-card">
+                            <div class="price-card__item">
+                                <div class="price-card__item-text">Товаров на:</div>
+                                <div class="price-card__item-num p-card__price">
+                                    <span>408 000 ₽</span>
+                                    388 000 ₽
+                                </div>
+                            </div>
+                            <div class="price-card__item">
+                                <div class="price-card__item-text">Доставка:</div>
+                                <div class="price-card__item-num p-card__price">
+                                    0 ₽
+                                </div>
+                            </div>
+                            <div class="price-card__item">
+                                <div class="price-card__item-text">Экономия:</div>
+                                <div class="price-card__item-num p-card__price">
+                                    20 000 ₽
+                                </div>
+                            </div>
+                            <div class="price-card__total">
+                                <div class="basket__total">
+                                    <div class="basket__total-col-1">
+                                        <p>Итого:</p>
+                                        <div class="basket__total-tax">Сумма НДС: 0 ₽</div>
+                                    </div>
+                                    <div class="basket__total-col-2 basket__total-cost">
+                                        388 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+	@@include('common/popup/_popup.html',{})
+	@@include('common/popup/_log-in.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.cabinet-registr {
+    margin-bottom: 129px;
+    &__title {
+        margin-bottom: 26px;
+    }
+
+    &__body {
+        display: flex;
+    }
+
+    &__content {
+        flex: 0 0 66.12%;
+        margin-right: 25px;
+        padding: 34px 41px 34px;
+        border: 1px dashed #C4C4C4;
+    }
+
+    &__text {
+        margin-bottom: 45px;
+    }
+
+    &__form {
+        max-width: 485px;
+
+        & .form__item_valid  {
+            margin-top: 44px;
+        }
+    }
+
+    &__aside {
+        margin-top: -10px;
+        flex: 1 1 auto;
+    }
+}
