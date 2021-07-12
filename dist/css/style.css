@@ -10420,6 +10420,7 @@ textarea {
         -ms-transform: translateX(104%);
             transform: translateX(104%);
     padding-bottom: 20px;
+    pointer-events: auto;
   }
 
   .menu.open {

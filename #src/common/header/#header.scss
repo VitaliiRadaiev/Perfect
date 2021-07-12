@@ -563,6 +563,7 @@
         transition: transform 0.6s ease;
         transform: translateX(104%);
         padding-bottom: 20px;
+        pointer-events: auto;
 
         &.open {
             transform: translateX(0%);
