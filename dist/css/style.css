@@ -5065,6 +5065,27 @@ textarea {
   margin-bottom: 19px;
 }
 
+.catalog__logo-list {
+  position: relative;
+  padding-top: 40px;
+  margin-bottom: 31px;
+}
+
+.catalog__logo-list:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background: url("../img/photo/advantages-bg1.png");
+  background-repeat: repeat;
+  z-index: -1;
+}
+
 .catalog__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5743,6 +5764,55 @@ textarea {
 
 .p-card-3 .p-card__star svg {
   margin-right: 5px;
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -7.5px 23px;
+}
+
+.categories > li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3333%;
+          flex: 0 1 33.3333%;
+  padding: 0 7.5px;
+  margin-bottom: 8px;
+}
+
+.category-card {
+  display: block;
+  color: #3d4d66;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.category-card__img {
+  overflow: hidden;
+  border-radius: 6px;
+  height: 152px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.category-card__img img {
+  -webkit-transition: all 1.4s ease;
+  -o-transition: all 1.4s ease;
+  transition: all 1.4s ease;
+}
+
+.category-card__title {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 139%;
+  letter-spacing: -0.03em;
 }
 
 .instagram {
@@ -9570,6 +9640,17 @@ textarea {
     border-top: 5px solid #E3CA9F;
   }
 
+  .category-card:hover .category-card__img {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .category-card:hover .category-card__img img {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
   .instagram__title a:hover {
     color: #E3CA9F;
   }
@@ -10216,6 +10297,12 @@ textarea {
 }
 
 @media (min-width: 1268px) {
+  .catalog__logo-list .logos-list .swiper-slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+  }
+
   .p-card-3__flex-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10694,6 +10781,10 @@ textarea {
     display: none;
   }
 
+  .catalog__logo-list {
+    padding-bottom: 10px;
+  }
+
   .catalog__list {
     margin-bottom: 16px;
   }
@@ -10807,6 +10898,12 @@ textarea {
   .p-card-3 .p-card__btn-order {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  .categories > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 
   .instagram__images .swiper-wrapper {
@@ -11167,6 +11264,12 @@ textarea {
   }
 
   .catalog__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .categories > li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;

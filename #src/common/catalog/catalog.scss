@@ -195,6 +195,36 @@
         margin-bottom: 19px;
     }
 
+    &__logo-list {
+        position: relative;
+        padding-top: 40px;
+        margin-bottom: 31px;
+
+        @media (max-width: $md3+px) {
+            padding-bottom: 10px;
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            height: 100%;
+            background: url("../img/photo/advantages-bg1.png");
+            background-repeat: repeat;
+            z-index: -1;
+        }
+
+        & .logos-list {
+            & .swiper-slide {
+                @media (min-width: 1268px) {
+                    flex: 0 1 20%;
+                }
+            }
+        }
+    }
+
     &__nav {
         display: flex;
         overflow-x: auto;
@@ -388,7 +418,6 @@
             }
         }
     }
-
 
     &__top {
         position: relative;
@@ -982,5 +1011,61 @@
         & svg {
             margin-right: 5px;
         }
+    }
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7.5px 23px;
+
+    & > li {
+        flex: 0 1 33.3333%;
+        padding: 0 7.5px;
+        margin-bottom: 8px;
+
+        @media (max-width: $md3+px) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: $md4+px) {
+            flex: 0 1 100%;
+        }
+    }
+}
+
+.category-card {
+    display: block;
+    color: #3d4d66;
+    transition: all 0.3s ease;
+
+    @media (min-width: 992px) {
+        &:hover {
+            & .category-card__img {
+                box-shadow: 0 0 20px rgba(#000, 0.2);
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    &__img {
+        overflow: hidden;
+        border-radius: 6px;
+        height: 152px;
+        transition: all 0.3s ease;
+        margin-bottom: 10px;
+
+        & img {
+            transition: all 1.4s ease;
+        }
+    }
+
+    &__title {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 139%;
+        letter-spacing: -0.03em;
     }
 }
