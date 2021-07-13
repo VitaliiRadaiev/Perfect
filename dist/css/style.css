@@ -7354,7 +7354,46 @@ textarea {
           align-items: flex-end;
   border-bottom: 1px solid #8c8c8c;
   padding-bottom: 19px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+}
+
+.basket__info-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: #f1f1f1;
+  border-radius: 4px;
+  min-height: 52px;
+  padding: 10px 33px;
+  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.basket__info-total {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 139%;
+  text-align: right;
+  letter-spacing: -0.03em;
+  color: #5e616b;
+  border-bottom: 1px solid #BCA47C;
+  margin-right: 30px;
+}
+
+.basket__info-deferred {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 139%;
+  text-align: right;
+  letter-spacing: -0.03em;
+  color: #BCA47C;
 }
 
 .basket__head-col-1 {
@@ -11320,6 +11359,19 @@ textarea {
 
   .similar-products.catalog .p-card .p-card__vendor-code {
     display: none;
+  }
+
+  .basket__info-line {
+    padding: 10px 15px;
+  }
+
+  .basket__info-total {
+    margin-right: 20px;
+    font-size: 15px;
+  }
+
+  .basket__info-deferred {
+    font-size: 15px;
   }
 }
 
