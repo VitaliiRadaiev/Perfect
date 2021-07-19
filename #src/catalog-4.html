@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	@@include('common/header/_header.html',{})
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page catalog-page _padding-top">
+		<div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Каталог</a>
+                </li>
+                <li>
+                     Швейцарские часы
+                </li>
+
+            </ul>
+        </div>
+
+		<section class="catalog catalog_shop">
+			<div class="container">
+				<h2 class="catalog__title title-2">каталог ШВЕЙЦАРСКИх НАРУЧНЫх ЧАСов</h2>
+				<div class="catalog__body">
+					<div class="catalog__col-1" data-da="catalog__col-2,1,991.98">
+						<form action="#" class="filter">
+							<div class="filter__item filter__item_1">
+								<h3 class="filter__title">Фильтр по параметрам</h3>
+							</div>
+							<div class="filter__mobile-collapse" >
+								<div class="filter__item filter__item_2">
+									<h4 class="filter__title-2">Цена</h4>
+									<div class="price-filter">
+										<div class="price-filter__values values-price-filter" data-min="597000"
+											data-max="12399000" data-start="597000" data-end="12399000">
+											<input class="price-filter__input price-filter__input-start" id="priceStart" autocomplete="off" type="text" name="start">
+											<span>–</span>
+											<input class="price-filter__input price-filter__input-end" id="priceEnd" autocomplete="off" type="text" name="end">
+										</div>
+										<div class="price-filter__slider"></div>
+									</div>
+								</div>
+								<div class="filter__item filter__item_3">
+									<h4 class="filter__title-2">Наши предложения</h4>
+									<div class="checkbox-wrap">
+										<input id="_1" class="checkbox" type="checkbox" name="">
+										<label for="_1" class="checkbox-wrap__label" >Новинка <span>(242)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_2" class="checkbox" type="checkbox" name="">
+										<label for="_2" class="checkbox-wrap__label" >Хит <span>(13)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_3" class="checkbox" type="checkbox" name="">
+										<label for="_3" class="checkbox-wrap__label" >Рекомендуем <span>(20)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_4" class="checkbox" type="checkbox" name="">
+										<label for="_4" class="checkbox-wrap__label" >Акция <span>(11)</span></label>
+									</div>
+								</div>
+								<div class="filter__item filter__item_4">
+									<h4 class="filter__title-2">Бренд</h4>
+									<div class="checkbox-wrap">
+										<input id="_5" class="checkbox" type="checkbox" name="">
+										<label for="_5" class="checkbox-wrap__label" >Omega <span>(201)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_6" class="checkbox" type="checkbox" name="">
+										<label for="_6" class="checkbox-wrap__label" >Longines <span>(10)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_7" class="checkbox" type="checkbox" name="">
+										<label for="_7" class="checkbox-wrap__label" >Rado <span>(120)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_8" class="checkbox" type="checkbox" name="">
+										<label for="_8" class="checkbox-wrap__label" >Tissot <span>(89)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_9" class="checkbox" type="checkbox" name="">
+										<label for="_9" class="checkbox-wrap__label" >Balmain <span>(3)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_10" class="checkbox" type="checkbox" name="">
+										<label for="_10" class="checkbox-wrap__label" >Certina <span>(54)</span></label>
+									</div>
+								</div>
+								<div class="filter__item filter__item_5">
+									<h4 class="filter__title-2">Модель</h4>
+									<div class="checkbox-wrap">
+										<input id="_11" class="checkbox" type="checkbox" name="">
+										<label for="_11" class="checkbox-wrap__label" >Унисекс <span>(32)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_12" class="checkbox" type="checkbox" name="">
+										<label for="_12" class="checkbox-wrap__label" >Мужские <span>(201)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_13" class="checkbox" type="checkbox" name="">
+										<label for="_13" class="checkbox-wrap__label" >Женские <span>(349)</span></label>
+									</div>
+								</div>
+								<div class="filter__item filter__item_6">
+									<h4 class="filter__title-2">Механизм</h4>
+									<div class="checkbox-wrap">
+										<input id="_14" class="checkbox" type="checkbox" name="">
+										<label for="_14" class="checkbox-wrap__label" >Автоматический <span>(56)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_15" class="checkbox" type="checkbox" name="">
+										<label for="_15" class="checkbox-wrap__label" >Ручной завод <span>(839)</span></label>
+									</div>
+									<div class="checkbox-wrap">
+										<input id="_16" class="checkbox" type="checkbox" name="">
+										<label for="_16" class="checkbox-wrap__label" >Кварцевый <span>(289)</span></label>
+									</div>
+								</div>
+								<div class="filter__item filter__item_7">
+									<div class="checkbox-wrap">
+										<input id="_17" class="checkbox" type="checkbox" name="">
+										<label for="_17" class="checkbox-wrap__label" >В наличии</label>
+									</div>
+								</div>
+								<div class="filter__item filter__item_8">
+									<button class="filter__submit btn-default" type="submit">Поаказть</button>
+									<button class="filter__reset btn-default" type="reset">сбросить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="catalog__col-2">
+                        <ul class="categories">
+                            <li>
+                                <a href="#" class="category-card">
+                                    <div class="category-card__img ibg">
+                                        <img src="img/photo/category-card-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="category-card__title">Omega Speedmaster</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category-card">
+                                    <div class="category-card__img ibg">
+                                        <img src="img/photo/category-card-img-2.jpg" alt="">
+                                    </div>
+                                    <div class="category-card__title">LONGINES 1832</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category-card">
+                                    <div class="category-card__img ibg">
+                                        <img src="img/photo/category-card-img-3.jpg" alt="">
+                                    </div>
+                                    <div class="category-card__title">De Ville</div>
+                                </a>
+                            </li>
+                        </ul>
+
+						<div class="catalog__head">
+							<div class="catalog__sort-filter">
+								<a class="active" href="#">
+									По полярности
+									<img class="img-svg" src="img/icons/star2.svg" alt="">
+								</a>
+								<a href="#">
+									По цене
+									<img class="img-svg" src="img/icons/price.svg" alt="">
+								</a>
+							</div>
+							<div class="catalog__list-view">
+								<a class="active" href="catalog-1.html">
+									<img src="img/icons/view-icon1.svg" alt="" class="img-svg">
+								</a>
+								<a class="" href="catalog-2.html">
+									<img src="img/icons/view-icon2.svg" alt="" class="img-svg">
+								</a>
+								<a class="" href="catalog-3.html">
+									<img src="img/icons/view-icon3.svg" alt="" class="img-svg">
+								</a>
+							</div>
+						</div>
+						<ul class="catalog__list">
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch2.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.6
+		
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: L3.811.4.73.6
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch3.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.2
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch4.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										omega seamaster diver 300 m co-axial master chronometer 42 mm 210.22.42.20.03.001
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">599 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch5.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										rado captain cook automatic bronze 01.763.0504.3.220 (r32504207)
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 01.763.0504.3.220
+									</div>
+									<div class="p-card__price">227 100 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch2.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.6
+		
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: L3.811.4.73.6
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch3.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.2
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch4.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										omega seamaster diver 300 m co-axial master chronometer 42 mm 210.22.42.20.03.001
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">599 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch5.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										rado captain cook automatic bronze 01.763.0504.3.220 (r32504207)
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 01.763.0504.3.220
+									</div>
+									<div class="p-card__price">227 100 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch2.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.6
+		
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: L3.811.4.73.6
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch3.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.2
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch4.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										omega seamaster diver 300 m co-axial master chronometer 42 mm 210.22.42.20.03.001
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">599 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch5.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										rado captain cook automatic bronze 01.763.0504.3.220 (r32504207)
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 01.763.0504.3.220
+									</div>
+									<div class="p-card__price">227 100 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch2.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.6
+		
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: L3.811.4.73.6
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch3.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.2
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch4.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										omega seamaster diver 300 m co-axial master chronometer 42 mm 210.22.42.20.03.001
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">599 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch5.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										rado captain cook automatic bronze 01.763.0504.3.220 (r32504207)
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 01.763.0504.3.220
+									</div>
+									<div class="p-card__price">227 100 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch2.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.6
+		
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: L3.811.4.73.6
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch3.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.2
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch4.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										omega seamaster diver 300 m co-axial master chronometer 42 mm 210.22.42.20.03.001
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">599 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch5.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										rado captain cook automatic bronze 01.763.0504.3.220 (r32504207)
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 01.763.0504.3.220
+									</div>
+									<div class="p-card__price">227 100 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch2.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.6
+		
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: L3.811.4.73.6
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch3.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										longines spirit l3.811.4.73.2
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">176 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star active">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch4.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										omega seamaster diver 300 m co-axial master chronometer 42 mm 210.22.42.20.03.001
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 215.30.44.21.03.001
+									</div>
+									<div class="p-card__price">599 500 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="p-card">
+									<div class="p-card__top">
+										<div class="p-card__label" style="background-color: #AAD7DF;">новинка</div>
+										<a href="#" class="p-card__star">
+											<img class="img-svg" src="img/icons/star.svg" alt="">
+										</a>
+										<div class="p-card__img">
+											<a href="#">
+												<img src="img/photo/watch5.png" alt="">
+											</a>
+										</div>
+									</div>
+									<a href="#" class="p-card__title">
+										rado captain cook automatic bronze 01.763.0504.3.220 (r32504207)
+									</a>
+									<!-- out-of-stock -->
+									<div class="p-card__status in-stock">
+										<span>В наличии</span>
+									</div>
+									<div class="p-card__vendor-code">
+										Артикул: 01.763.0504.3.220
+									</div>
+									<div class="p-card__price">227 100 ₽</div>
+									<div class="p-card__bottom">
+										<a href="#" class="p-card__btn-order btn-default">заказать</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a href="#" class="catalog__btn-more">
+							<span class="plus"></span>
+							Показать ещё
+						</a>
+						<div class="pagging">
+							<ul class="pagging__list">
+								<li>
+									<a href="" class="pagging__item active">1</a>
+								</li>
+								<li>
+									<a href="" class="pagging__item">2</a>
+								</li>
+								<li>
+									<a href="" class="pagging__item">3</a>
+								</li>
+								<li>
+									...
+								</li>
+								<li>
+									<a href="" class="pagging__item">32</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="address-block">
+			<div class="container">
+				<h2 class="address-block__title title-2">Адреса магазинов</h2>
+
+				<div class="address-block__body">
+					<div class="address-block__item">
+						<div class="address-block__item-head">
+							<div class="address-block__item-icon">
+								<img src="img/icons/local-grey.svg" alt="">
+							</div>
+							<div class="address-block__item-text">
+								<div class="address-block__item-address">м. Маяковская, ул. 1-я Тверская-Ямская, 6 </div>
+								<div class="address-block__item-time">пн — сб с 10:00 до 20:00, вс с 10:00 до 18:00</div>
+							</div>
+						</div>
+						<div class="address-block__item-map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2db3e8ff124481e7763d3527bf4ffde0b39240367e433371b0bce6c18ac8017f&amp;source=constructor" width="100%" height="440" frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="address-block__item">
+						<div class="address-block__item-head">
+							<div class="address-block__item-icon">
+								<img src="img/icons/local-grey.svg" alt="">
+							</div>
+							<div class="address-block__item-text">
+								<div class="address-block__item-address">м. Полянка, ул. Большая Якиманка, 19</div>
+								<div class="address-block__item-time">пн — сб с 10:00 до 20:00, вс с 10:00 до 18:00</div>
+							</div>
+						</div>
+						<div class="address-block__item-map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0bb62d26aeebc00ff4d29c0b977ae0f63ac95cdc717e81d3a3f9378bd6126e3&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+	@@include('common/popup/_popup.html',{})
+	@@include('common/popup/_log-in.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

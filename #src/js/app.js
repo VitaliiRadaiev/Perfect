@@ -45,6 +45,7 @@ window.addEventListener('load', function () {
 	
 	@@include('pages/#single-product.js');
 	@@include('pages/#service.js');
+	@@include('pages/#order.js');
 	
 });
 

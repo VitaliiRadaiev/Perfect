@@ -399,6 +399,12 @@ button.btn-default {
 			color: #bf0050;
 		}
 	}
+
+	&.input-item_address {
+		& .textarea {
+			height: 76px;
+		}
+	}
 }	
 
 .input {

@@ -366,6 +366,17 @@
             margin-right: 9px;
         }
     }
+
+    &__img {
+        border-radius: 6px;
+        overflow: hidden;
+        height: 300px;
+        margin-bottom: 28px;
+
+        @media (max-width: $md3+px) {
+            height: 200px;
+        }
+    }
 }
 
 .p-card {
