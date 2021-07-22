@@ -3808,6 +3808,14 @@ textarea {
   margin-bottom: 29px;
 }
 
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
 .text-content {
   font-size: 16px;
   line-height: 150%;

@@ -730,6 +730,13 @@ button.btn-default {
 	}
 }
 
+.tab-content {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
 
 // === TEXT CONTETN BLOCK ========================================================================
 .text-content {
