@@ -69,21 +69,21 @@ let _slideToggle = (target, duration = 500) => {
 
 
 
-$('img.img-svg').each(function(){
-  var $img = $(this);
-  var imgClass = $img.attr('class');
-  var imgURL = $img.attr('src');
-  $.get(imgURL, function(data) {
-    var $svg = $(data).find('svg');
-    if(typeof imgClass !== 'undefined') {
-      $svg = $svg.attr('class', imgClass+' replaced-svg');
-    }
-    $svg = $svg.removeAttr('xmlns:a');
-    if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-      $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-    }
-    $img.replaceWith($svg);
-  }, 'xml');
+$('img.img-svg').each(function () {
+	var $img = $(this);
+	var imgClass = $img.attr('class');
+	var imgURL = $img.attr('src');
+	$.get(imgURL, function (data) {
+		var $svg = $(data).find('svg');
+		if (typeof imgClass !== 'undefined') {
+			$svg = $svg.attr('class', imgClass + ' replaced-svg');
+		}
+		$svg = $svg.removeAttr('xmlns:a');
+		if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+			$svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+		}
+		$img.replaceWith($svg);
+	}, 'xml');
 });
 
 
@@ -96,7 +96,7 @@ function spollerInit() {
 		for (let index = 0; index < spollers.length; index++) {
 			const spoller = spollers[index];
 
-			if(spoller.classList.contains('_active')) {
+			if (spoller.classList.contains('_active')) {
 				_slideDown(spoller.nextElementSibling);
 			}
 
@@ -120,7 +120,7 @@ function spollerInit() {
 					}
 				}
 				spoller.classList.toggle('_active');
-				if(spoller.classList.contains('_active')) {
+				if (spoller.classList.contains('_active')) {
 					spoller.parentElement.classList.add('_active');
 				} else {
 					spoller.parentElement.classList.remove('_active');
@@ -136,60 +136,57 @@ spollerInit()
 
 
 
-if($('.anchor').length>0) {
-	$(".anchor").click(function() {
-	  var elementClick = $(this).attr("href").match(/#\w+$/gi).join(''); 
-	  var destination = $(elementClick).offset().top - 70;
-	  jQuery("html:not(:animated),body:not(:animated)").animate({
-		scrollTop: destination
-	  }, 600);
-	  return false;
+if ($('.anchor').length > 0) {
+	$(".anchor").click(function () {
+		var elementClick = this.getAttribute('href').replace('#', '');
+		var destination = document.getElementById(elementClick).offsetTop -80;
+		jQuery("html:not(:animated),body:not(:animated)").animate({
+			scrollTop: destination
+		}, 600);
+		return false;
 	});
 }
 
 function createTabs(containerName = false, triggersName = false, tabsName = false) {
-    let container = document.querySelector(`${containerName}`);
-    if(container) {
-       let allTriggers = container.querySelectorAll(`${triggersName}`);
-       let allTabs = container.querySelectorAll(`${tabsName}`);
+	let container = document.querySelector(`${containerName}`);
+	if (container) {
+		let allTriggers = container.querySelectorAll(`${triggersName}`);
+		let allTabs = container.querySelectorAll(`${tabsName}`);
 
-       if(!allTabs.length) {
-        let err = new Error('Tabs not found.');
-        throw err;
-       }
+		if (!allTabs.length) {
+			let err = new Error('Tabs not found.');
+			throw err;
+		}
 
-       if(allTriggers.length) {
-           allTriggers.forEach(trigger => {
-               trigger.addEventListener('click', (e) => {
-                   e.preventDefault();
-                   const id = trigger.getAttribute('href').replace('#','');
-                  
-                   trigger.classList.add('active');
+		if (allTriggers.length) {
+			allTriggers.forEach(trigger => {
+				trigger.addEventListener('click', (e) => {
+					e.preventDefault();
+					const id = trigger.getAttribute('href').replace('#', '');
 
-                   allTriggers.forEach(i => {
-                       if(i == trigger) {
-                           return
-                       }
-                       i.classList.remove('active');
-                   });
+					trigger.classList.add('active');
 
-                   allTabs.forEach(tab => {
-                       if(tab.id == id) {
-                           tab.classList.add('active')
-                       } else {
-                           tab.classList.remove('active');
-                       }
-                   })
-                   
-               })
-           })
-       } else {
-        let err = new Error('Triggers not found.');
-        throw err;
-       }
-        
-    } else {
-      let err = new Error('Container not found.');
-      throw err;
-    }
+					allTriggers.forEach(i => {
+						if (i == trigger) {
+							return
+						}
+						i.classList.remove('active');
+					});
+
+					allTabs.forEach(tab => {
+						if (tab.id == id) {
+							tab.classList.add('active')
+						} else {
+							tab.classList.remove('active');
+						}
+					})
+
+				})
+			})
+		} else {
+			let err = new Error('Triggers not found.');
+			throw err;
+		}
+
+	}
 }

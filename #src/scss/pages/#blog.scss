@@ -1,0 +1,229 @@
+.blog-page {
+    & .breadcrumb {
+        margin-bottom: 16px;
+
+        @media (max-width: $md4+px) {
+            margin-bottom: 18px;
+        }
+    }
+}
+.blog {
+    &__title {
+        margin-bottom: 83px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 21px;
+        }
+
+        @media (max-width: $md4+px) {
+            &.title-2 {
+                font-size: 39px;
+                line-height: 139%;
+                /* or 54px */
+
+                letter-spacing: -0.03em;
+            }
+        }
+    }
+
+    &__title-sm {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 139%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #5e616b;
+        
+    }
+
+    &__tags {
+        margin-bottom: 51px;
+        max-width: 1125px;
+
+        @media (max-width: $md3+px) {
+            padding-bottom: 23px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #c4c4c4;
+        }
+    }
+
+    &__tags-title {
+        margin-bottom: 16px;
+    }
+
+    &__tags-list {
+    }
+
+    &__categories {
+    }
+
+    &__topics {
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__topics-title {
+        margin-bottom: 3px;
+    }
+
+    &__topics-list {
+        margin-bottom: 28px;
+
+        & > li {
+            position: relative;
+            padding-left: 33px;
+            &:before {
+                position: absolute;
+                content: '';
+                top: 19px;
+                left: 14px;
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                background-color: $mainColor2;
+            }
+            & > a {
+                font-size: 22px;
+                line-height: 200%;
+                letter-spacing: -0.03em;
+                text-decoration-line: underline;
+                color: $mainColor2;
+                transition: all .3s ease;
+            }
+        }
+    }
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: inline-flex;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    min-height: 21px;
+    align-items: center;
+    padding: 2px 9px;
+    background: $mainColor;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 139%;
+    transition: all 0.3s ease;
+
+    @media (min-width: 992px) {
+        &:hover {
+            background-color: $hover2;
+        }
+    }
+}
+
+.blog-category {
+    margin-bottom: 57px;
+
+    &__title {
+        margin-bottom: 30px;
+        position: relative;
+
+        @media (max-width: $md4+px) {
+            margin-bottom: 27px;
+        }
+
+        &.title {
+            @media (max-width: $md4+px) {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 139%;
+            }
+        }
+
+        @media (min-width: 480px) {
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: -5px;
+                height: 1px;
+                width: 100%;
+                background-color: #c4c4c4;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -11px;
+
+        & > li {
+            flex: 0 1 25%;
+            padding: 0 11px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: $md2+px) {
+            & > li {
+                flex: 0 1 33.333%;
+            }
+        }
+        @media (max-width: $md3+px) {
+            & > li {
+                flex: 0 1 50%;
+            }
+        }
+        @media (max-width: $md4+px) {
+            & > li {
+                flex: 0 1 100%;
+            }
+        }
+    }
+}
+
+.blog-card {
+    &__img {
+        padding-bottom: 63.93%;
+        margin-bottom: 9px;
+
+        @media (max-width: $md4+px) {
+            padding-bottom: 55.93%;
+        }
+    }
+
+    &__tags {
+        margin-bottom: -10px;
+
+        & .tag {
+            padding: 2px 7px;
+            margin-right: 5px;
+        }
+    }
+
+    &__title {
+        color: $mainColor2;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 144%;
+        letter-spacing: -0.03em;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        display: block;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        @media (min-width: 992px) {
+            &:hover {
+                color: $hover2;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+    }
+}
