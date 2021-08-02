@@ -405,7 +405,7 @@ button.btn-default {
 			height: 76px;
 		}
 	}
-}	
+}
 
 .input {
 	background: #f1f1f1;
@@ -677,7 +677,6 @@ button.btn-default {
 	}
 
 	&__footer {
-
 		position: relative;
 		padding: 43px 0 0px;
 		align-items: center;
@@ -751,6 +750,14 @@ button.btn-default {
 	}
 
 	& h1 {
+		font-weight: bold;
+		font-size: 39px;
+		line-height: 139%;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+		color: $mainColor2;
+		margin-top: 0;
+		margin-bottom: 7px;
 	}
 	& h2 {
 		font-weight: bold;
@@ -808,9 +815,13 @@ button.btn-default {
 	}
 
 	& p {
-		margin-bottom: 1.5em;
+		margin-bottom: 1.56em;
 
 		& ~ h2 {
+			margin-top: 1.6em;
+		}
+
+		& ~ h3 {
 			margin-top: 1.6em;
 		}
 
@@ -833,7 +844,7 @@ button.btn-default {
 		}
 
 		& a {
-			color: $mainColor2;
+			color: $mainColor;
 			text-decoration: underline;
 			transition: all 0.3s ease;
 
@@ -844,7 +855,54 @@ button.btn-default {
 			}
 		}
 
+		& i {
+			font-size: 15px;
+			line-height: 180%;
+			letter-spacing: -0.03em;
+			
+		}
 
+		& img {
+			float: left;
+			margin-right: 26px;
+			margin-bottom: 50px;
+			max-width: 100%;
+
+			@media (max-width: $md3+px) {
+				float: none;
+				width: 100%;
+				margin-bottom: 10px;
+			}
+		}
+
+		&.has-img {
+			@media (min-width: 768px) {
+				padding-top: 21px;
+			}
+			& + * {
+				clear: both;
+			}
+		}
+
+	}
+	& b {
+		display: block;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 150%;
+		letter-spacing: -0.03em;
+		color: $mainColor;
+		padding-left: 0;
+		margin-bottom: 1.7em;
+
+		@media (max-width: $md3+px) {
+			font-size: 20px;
+		}
+
+		& ~ h3 {
+			margin-top: 2.7em;
+		}
 	}
 
 	& ul {
@@ -870,13 +928,47 @@ button.btn-default {
 	& ol {
 	}
 
+	q {
+		display: block;
+		padding-left: 22px;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 180%;
+		position: relative;
+		letter-spacing: -0.03em;
+		margin-bottom: 1.56em;
+
+		& ~ h3 {
+			margin-top: 2.7em;
+		}
+
+		&:before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			height: calc(100% - 18px);
+			width: 1px;
+			background-color: $mainColor;
+		}
+
+		&:after {
+			display: none;
+		}
+
+		@media (max-width: $md3+px) {
+			font-size: 16px;
+		}
+	}
+
 	& figure {
 		margin: 3.6em 0 2em;
 
 		@media (max-width: $md3+px) {
 			margin-bottom: 10px;
 		}
-
 
 		& img {
 			width: 100%;
@@ -972,7 +1064,6 @@ button.btn-default {
 			&:last-child {
 				margin-bottom: 0;
 			}
-			
 		}
 	}
 
@@ -1023,4 +1114,5 @@ button.btn-default {
 @import "pages/#cabinet-registr";
 @import "pages/#main-catalog";
 @import "pages/#blog";
+@import "pages/#blog-detail";
 // ==== AND PAGES =====================================================

@@ -7,7 +7,7 @@
             if(document.documentElement.clientWidth > 991) {
                 if(aside.getBoundingClientRect().top < 121) {
                     aside.classList.add('_fixed');
-                    aside.style.top = '121px';
+                    aside.style.top = '122px';
                     aside.style.maxWidth = (asideWrap.clientWidth) + 'px';
                 }else if(asideWrap.getBoundingClientRect().top >= 121) {
                     aside.classList.remove('_fixed');

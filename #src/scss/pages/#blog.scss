@@ -90,6 +90,13 @@
                 text-decoration-line: underline;
                 color: $mainColor2;
                 transition: all .3s ease;
+                
+                @media (min-width: 992px) {
+                    &:hover {
+                        color: $hover2;
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
