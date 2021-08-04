@@ -177,6 +177,35 @@
     border: 1px solid #8c8c8c;
     border-radius: 6px;
 
+    &.box_v2 {
+        background: #f4f4f4;
+
+        & .box__head {
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+        }
+
+        & .box__content {
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 23px;
+        }
+
+        @media (max-width: $md3+px) {
+            & .box__head {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            & .box__content {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+        }
+    }
+
     &__head {
         background: #dcdcdc;
         border-radius: 6px 6px 0px 0px;
@@ -421,7 +450,7 @@
         padding: 21px 23px 15px 53px;
         cursor: pointer;
         display: flex;
-        border: 1px solid #0E3C67;
+        border: 1px solid #0e3c67;
 
         @media (max-width: $md4+px) {
             padding-left: 30px;

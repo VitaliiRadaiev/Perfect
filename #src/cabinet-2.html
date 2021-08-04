@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	@@include('common/header/_header.html',{})
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page cabinet-page _padding-top">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Мой кабинет</a>
+				</li>
+				<li>
+					Текущие заказы
+				</li>
+			</ul>
+		</div>
+
+		<section class="cabinet">
+			<div class="container">
+				<div class="cabinet__mobile-nav">
+					<div class="cabinet__mobile-nav-title">
+						Меню раздела
+					</div>
+				</div>
+
+				<h2 class="cabinet__title title-2">
+					Текущие заказы
+				</h2>
+				<div class="cabinet__body">
+					<div class="cabinet__col-1">
+						<a href="#" class="cabinet__link">
+							<img src="img/icons/notebook.svg" alt="">
+							Посмотреть историю заказов
+						</a>
+						<h3 class="cabinet__title-2 title">
+							Заказы в статусе «Принят, ожидается оплата»
+						</h3>
+
+						<div class="box box_v2">
+							<div class="box__head">
+								<div class="box__col-1">
+									<h3 class="cabinet__title-3">
+										Заказ №24 от 24.09.2021, 1 товар на сумму 120 899 ₽
+									</h3>
+								</div>
+							</div>
+							<div class="box__content">
+								<div class="cabinet-info-card">
+									<div class="cabinet-info-card__title">
+										оплата
+									</div>
+									<ul class="cabinet-info-card__list">
+										<li>
+											<strong><strong>Счет №24/1 от 24.09.2021, Наличные курьеру</strong></strong>
+											<span class="status-label"
+												style="background: rgba(206,19,32, 0.2); color: #CE1320;">Не
+												оплачено</span>
+										</li>
+										<li>
+											Сумма к оплате по счету: 120 899 ₽
+										</li>
+										<li>
+											<a href="#">Сменить способ оплаты</a>
+										</li>
+									</ul>
+								</div>
+								<div class="cabinet-info-card">
+									<div class="cabinet-info-card__title">
+										доставка
+									</div>
+									<ul class="cabinet-info-card__list">
+										<li>
+											<strong><strong>Отгрузка №24/2</strong></strong>
+											<span class="status-label"
+												style="background: rgba(206,19,32, 0.2); color: #CE1320;">Не
+												отгружено</span>
+										</li>
+										<li>
+											Статус отгрузки: <span class="status-label"
+												style="background: rgba(94,97,107, 0.2); color: #5E616B;">Ожидает
+												обработки</span>
+										</li>
+										<li>
+											Служба доставки: DPD
+										</li>
+									</ul>
+								</div>
+
+
+								<div class="cabinet-box-action">
+									<a href="#" class="cabinet-box-action__trigger link-icon-left">
+										<img src="img/icons/info.svg" alt="">
+										Подробнее о заказе
+									</a>
+									<a href="#" class="link-icon-left">
+										<img src="img/icons/close.svg" alt="">
+										Отменить заказ
+									</a>
+
+									<div class="cabinet-box-action__info-text text-content">
+										<h5>Lorem ipsum dolor sit.</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, temporibus.
+										</p>
+										<ul>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+										</ul>
+										<a href="#" class="cabinet-box-action__trigger-close link-icon-left">
+											<img src="img/icons/close.svg" alt="">
+											Закрыть
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="box box_v2">
+							<div class="box__head">
+								<div class="box__col-1">
+									<h3 class="cabinet__title-3">
+										Заказ №24 от 24.09.2021, 1 товар на сумму 120 899 ₽
+									</h3>
+								</div>
+							</div>
+							<div class="box__content">
+								<div class="cabinet-info-card">
+									<div class="cabinet-info-card__title">
+										оплата
+									</div>
+									<ul class="cabinet-info-card__list">
+										<li>
+											<strong><strong>Счет №24/1 от 24.09.2021, Наличные курьеру</strong></strong>
+											<span class="status-label"
+												style="background: rgba(206,19,32, 0.2); color: #CE1320;">Не
+												оплачено</span>
+										</li>
+										<li>
+											Сумма к оплате по счету: 120 899 ₽
+										</li>
+										<li>
+											<a href="#">Сменить способ оплаты</a>
+										</li>
+									</ul>
+								</div>
+								<div class="cabinet-info-card">
+									<div class="cabinet-info-card__title">
+										доставка
+									</div>
+									<ul class="cabinet-info-card__list">
+										<li>
+											<strong><strong>Отгрузка №24/2</strong></strong>
+											<span class="status-label"
+												style="background: rgba(206,19,32, 0.2); color: #CE1320;">Не
+												отгружено</span>
+										</li>
+										<li>
+											Статус отгрузки: <span class="status-label"
+												style="background: rgba(94,97,107, 0.2); color: #5E616B;">Ожидает
+												обработки</span>
+										</li>
+										<li>
+											Служба доставки: DPD
+										</li>
+									</ul>
+								</div>
+
+
+								<div class="cabinet-box-action">
+									<a href="#" class="cabinet-box-action__trigger link-icon-left">
+										<img src="img/icons/info.svg" alt="">
+										Подробнее о заказе
+									</a>
+									<a href="#" class="link-icon-left">
+										<img src="img/icons/close.svg" alt="">
+										Отменить заказ
+									</a>
+
+									<div class="cabinet-box-action__info-text text-content">
+										<h5>Lorem ipsum dolor sit.</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, temporibus.
+										</p>
+										<ul>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+										</ul>
+										<a href="#" class="cabinet-box-action__trigger-close link-icon-left">
+											<img src="img/icons/close.svg" alt="">
+											Закрыть
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<h3 class="cabinet__title-2 title">
+							Заказы в статусе «Принят, ожидается оплата»
+						</h3>
+						<div class="box box_v2">
+							<div class="box__head">
+								<div class="box__col-1">
+									<h3 class="cabinet__title-3">
+										Заказ №19 от 20.09.2021, 1 товар на сумму 20 899 ₽
+									</h3>
+								</div>
+							</div>
+							<div class="box__content">
+								<div class="cabinet-info-card">
+									<div class="cabinet-info-card__title">
+										оплата
+									</div>
+									<ul class="cabinet-info-card__list">
+										<li>
+											<strong><strong>Счет №19/1 от 20.09.2021, Наличные курьеру</strong></strong>
+											<span class="status-label"
+												style="background: rgba(106,154,77, 0.2); color: #6A9A4D;">Оплачено</span>
+										</li>
+										<li>
+											Сумма к оплате по счету: 120 899 ₽
+										</li>
+										<li>
+											<a href="#">Сменить способ оплаты</a>
+										</li>
+									</ul>
+								</div>
+								<div class="cabinet-info-card">
+									<div class="cabinet-info-card__title">
+										доставка
+									</div>
+									<ul class="cabinet-info-card__list">
+										<li>
+											<strong><strong>Отгрузка №19/2</strong></strong>
+											<span class="status-label"
+												style="background: rgba(206,19,32, 0.2); color: #CE1320;">Не
+												отгружено</span>
+										</li>
+										<li>
+											Статус отгрузки: <span class="status-label"
+												style="background: rgba(94,97,107, 0.2); color: #5E616B;">Ожидает
+												обработки</span>
+										</li>
+										<li>
+											Служба доставки: DPD
+										</li>
+									</ul>
+								</div>
+
+
+								<div class="cabinet-box-action">
+									<a href="#" class="cabinet-box-action__trigger link-icon-left">
+										<img src="img/icons/info.svg" alt="">
+										Подробнее о заказе
+									</a>
+
+									<div class="cabinet-box-action__info-text text-content">
+										<h5>Lorem ipsum dolor sit.</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, temporibus.
+										</p>
+										<ul>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+										</ul>
+										<a href="#" class="cabinet-box-action__trigger-close link-icon-left">
+											<img src="img/icons/close.svg" alt="">
+											Закрыть
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<h3 class="cabinet__title-2 title">
+							Заказы в статусе «Отгружен, в процессе доставки»
+						</h3>
+						<div class="box box_v2">
+							<div class="box__head">
+								<div class="box__col-1">
+									<h3 class="cabinet__title-3">
+										Заказ №19 от 20.09.2021, 1 товар на сумму 20 899 ₽
+									</h3>
+								</div>
+							</div>
+							<div class="box__content">
+								<div class="cabinet-info-card">
+									<div class="cabinet-info-card__title">
+										оплата
+									</div>
+									<ul class="cabinet-info-card__list">
+										<li>
+											<strong><strong>Счет №19/1 от 20.09.2021, Наличные курьеру</strong></strong>
+											<span class="status-label"
+												style="background: rgba(106,154,77, 0.2); color: #6A9A4D;">Оплачено</span>
+										</li>
+										<li>
+											Сумма к оплате по счету: 120 899 ₽
+										</li>
+										<li>
+											<a href="#">Сменить способ оплаты</a>
+										</li>
+									</ul>
+								</div>
+								<div class="cabinet-info-card">
+									<div class="cabinet-info-card__title">
+										доставка
+									</div>
+									<ul class="cabinet-info-card__list">
+										<li>
+											<strong><strong>Отгрузка №19/2</strong></strong>
+											<span class="status-label"
+											style="background: rgba(106,154,77, 0.2); color: #6A9A4D;">Отгружено</span>
+										</li>
+										<li>
+											Статус отгрузки: <span class="status-label"
+												style="background: rgba(94,97,107, 0.2); color: #5E616B;">Ожидает
+												обработки</span>
+										</li>
+										<li>
+											Служба доставки: DPD
+										</li>
+									</ul>
+								</div>
+
+
+								<div class="cabinet-box-action">
+									<a href="#" class="cabinet-box-action__trigger link-icon-left">
+										<img src="img/icons/info.svg" alt="">
+										Подробнее о заказе
+									</a>
+									<div class="cabinet-box-action__info-text text-content">
+										<h5>Lorem ipsum dolor sit.</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, temporibus.
+										</p>
+										<ul>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+											<li>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</li>
+										</ul>
+										<a href="#" class="cabinet-box-action__trigger-close link-icon-left">
+											<img src="img/icons/close.svg" alt="">
+											Закрыть
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="cabinet__col-2">
+						<ul class="aside-list" data-da="cabinet__mobile-nav,last,991.98">
+							<li class="active">
+								<a href="#">Мой кабинет</a>
+							</li>
+							<li>
+								<a href="#">Текущие заказы</a>
+							</li>
+							<li>
+								<a href="#">История заказов</a>
+							</li>
+							<li>
+								<a href="#">Личные данные</a>
+							</li>
+							<li>
+								<a href="#">Корзина</a>
+							</li>
+							<li>
+								<a href="#">Избранное</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viewed-products">
+			<div class="container">
+
+				<h2 class="viewed-products__title title">ранее вы смотрели</h2>
+				<div class="viewed-products__btn-group">
+					<div class="viewed-products__btn viewed-products__btn-prev"></div>
+					<div class="viewed-products__btn viewed-products__btn-next"></div>
+				</div>
+				<div class="viewed-products__slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img1.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>Ремешок Longines</p>
+										<p>L682104216</p>
+										<p>18/16мм</p>
+									</div>
+									<div class="card-mini__price">
+										2 100 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img2.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>OMEGA De Ville</p>
+										<p>Tresor Omega</p>
+										<p>Co-Axial Master</p>
+									</div>
+									<div class="card-mini__price">
+										561 000 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img3.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>Longines Spirit </p>
+										<p>L3.811.4.73.6</p>
+									</div>
+									<div class="card-mini__price">
+										176 500 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img4.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>Ремешок Longines</p>
+										<p>L682104216</p>
+										<p>18/16мм</p>
+									</div>
+									<div class="card-mini__price">
+										605 000 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img1.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>Ремешок Longines</p>
+										<p>L682104216</p>
+										<p>18/16мм</p>
+									</div>
+									<div class="card-mini__price">
+										2 100 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img2.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>OMEGA De Ville</p>
+										<p>Tresor Omega</p>
+										<p>Co-Axial Master</p>
+									</div>
+									<div class="card-mini__price">
+										561 000 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+	@@include('common/popup/_popup.html',{})
+	@@include('common/popup/_log-in.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

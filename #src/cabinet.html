@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	@@include('common/header/_header.html',{})
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page cabinet-page cabinet-page_main _padding-top">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					Мой кабинет
+				</li>
+			</ul>
+		</div>
+
+		<section class="cabinet">
+			<div class="container">
+				<div class="cabinet__mobile-nav">
+					<div class="cabinet__mobile-nav-title">
+						Меню раздела
+					</div>
+				</div>
+
+				<h2 class="cabinet__title title-2">
+					Персональный раздел
+				</h2>
+				<div class="cabinet__body">
+					<div class="cabinet__col-1">
+						<ul class="cabinet-main-nav">
+							<li>
+								<a href="#" class="cabinet-main-nav__item">
+									<div class="cabinet-main-nav__title">
+										Текущие заказы
+									</div>
+									<div class="cabinet-main-nav__subtitle">
+										статусы, отслеживание и подробности
+									</div>
+									<div class="cabinet-main-nav__icon">
+										<img class="img-svg" src="img/icons/cabinet-nav-icon-1.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="cabinet-main-nav__item">
+									<div class="cabinet-main-nav__title">
+										История заказов
+									</div>
+									<div class="cabinet-main-nav__subtitle">
+										подробности выполненных ране заказов
+									</div>
+									<div class="cabinet-main-nav__icon">
+										<img class="img-svg" src="img/icons/cabinet-nav-icon-2.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="cabinet-main-nav__item">
+									<div class="cabinet-main-nav__title">
+										Личные
+										данные
+									</div>
+									<div class="cabinet-main-nav__subtitle">
+										ваш профиль, имя, почта и пароль
+									</div>
+									<div class="cabinet-main-nav__icon">
+										<img class="img-svg" src="img/icons/cabinet-nav-icon-3.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="cabinet-main-nav__item">
+									<div class="cabinet-main-nav__title">
+										Корзина
+									</div>
+									<div class="cabinet-main-nav__subtitle">
+										формирование вашего текущего заказа
+									</div>
+									<div class="cabinet-main-nav__icon">
+										<img class="img-svg" src="img/icons/cabinet-nav-icon-4.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="cabinet-main-nav__item">
+									<div class="cabinet-main-nav__title">
+										Избранное
+									</div>
+									<div class="cabinet-main-nav__subtitle">
+										то, что вы отложили для себя, “посмотреть и подумать”
+									</div>
+									<div class="cabinet-main-nav__icon">
+										<img class="img-svg" src="img/icons/cabinet-nav-icon-5.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="cabinet-main-nav__item">
+									<div class="cabinet-main-nav__title">
+										Контакты
+									</div>
+									<div class="cabinet-main-nav__subtitle">
+										адреса и телефоны магазинов, форма обратной связи
+										с администрацией
+									</div>
+									<div class="cabinet-main-nav__icon">
+										<img class="img-svg" src="img/icons/cabinet-nav-icon-6.svg" alt="">
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cabinet__col-2">
+						<ul class="aside-list" data-da="cabinet__mobile-nav,last,991.98">
+							<li class="active">
+								<a href="#">Мой кабинет</a>
+							</li>
+							<li>
+								<a href="#">Текущие заказы</a>
+							</li>
+							<li>
+								<a href="#">История заказов</a>
+							</li>
+							<li>
+								<a href="#">Личные данные</a>
+							</li>
+							<li>
+								<a href="#">Корзина</a>
+							</li>
+							<li>
+								<a href="#">Избранное</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viewed-products">
+            <div class="container">
+
+                <h2 class="viewed-products__title title">ранее вы смотрели</h2>
+                <div class="viewed-products__btn-group">
+                    <div class="viewed-products__btn viewed-products__btn-prev"></div>
+                    <div class="viewed-products__btn viewed-products__btn-next"></div>
+                </div>
+                <div class="viewed-products__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="card-mini">
+                                <div class="card-mini__img">
+                                    <img src="img/photo/card-mini-img1.png" alt="">
+                                </div>
+                                <div class="card-mini__text-wrap">
+                                    <div class="card-mini__text">
+                                        <p>Ремешок Longines</p>
+                                        <p>L682104216</p>
+                                        <p>18/16мм</p>
+                                    </div>
+                                    <div class="card-mini__price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card-mini">
+                                <div class="card-mini__img">
+                                    <img src="img/photo/card-mini-img2.png" alt="">
+                                </div>
+                                <div class="card-mini__text-wrap">
+                                    <div class="card-mini__text">
+                                        <p>OMEGA De Ville</p>
+                                        <p>Tresor Omega</p>
+                                        <p>Co-Axial Master</p>
+                                    </div>
+                                    <div class="card-mini__price">
+                                        561 000 ₽
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card-mini">
+                                <div class="card-mini__img">
+                                    <img src="img/photo/card-mini-img3.png" alt="">
+                                </div>
+                                <div class="card-mini__text-wrap">
+                                    <div class="card-mini__text">
+                                        <p>Longines Spirit </p>
+                                        <p>L3.811.4.73.6</p>
+                                    </div>
+                                    <div class="card-mini__price">
+                                        176 500 ₽
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card-mini">
+                                <div class="card-mini__img">
+                                    <img src="img/photo/card-mini-img4.png" alt="">
+                                </div>
+                                <div class="card-mini__text-wrap">
+                                    <div class="card-mini__text">
+                                        <p>Ремешок Longines</p>
+                                        <p>L682104216</p>
+                                        <p>18/16мм</p>
+                                    </div>
+                                    <div class="card-mini__price">
+                                        605 000 ₽
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card-mini">
+                                <div class="card-mini__img">
+                                    <img src="img/photo/card-mini-img1.png" alt="">
+                                </div>
+                                <div class="card-mini__text-wrap">
+                                    <div class="card-mini__text">
+                                        <p>Ремешок Longines</p>
+                                        <p>L682104216</p>
+                                        <p>18/16мм</p>
+                                    </div>
+                                    <div class="card-mini__price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card-mini">
+                                <div class="card-mini__img">
+                                    <img src="img/photo/card-mini-img2.png" alt="">
+                                </div>
+                                <div class="card-mini__text-wrap">
+                                    <div class="card-mini__text">
+                                        <p>OMEGA De Ville</p>
+                                        <p>Tresor Omega</p>
+                                        <p>Co-Axial Master</p>
+                                    </div>
+                                    <div class="card-mini__price">
+                                        561 000 ₽
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+	@@include('common/popup/_popup.html',{})
+	@@include('common/popup/_log-in.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

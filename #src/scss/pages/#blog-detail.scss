@@ -283,6 +283,10 @@
 
         &.active {
             background: rgba(#dcdcdc, 0.5);
+
+            & > a {
+                 color: #5E616B;
+            }
         }
     }
 }

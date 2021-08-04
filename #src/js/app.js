@@ -47,6 +47,7 @@ window.addEventListener('load', function () {
 	@@include('pages/#service.js');
 	@@include('pages/#order.js');
 	@@include('pages/#blog-detail.js');
+	@@include('pages/#cabinet.js');
 
 	createTabs('.tabs', '.tab-trigger', '.tab-content')
 	
