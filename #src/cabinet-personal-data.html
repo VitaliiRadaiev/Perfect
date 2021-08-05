@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	@@include('common/header/_header.html',{})
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page cabinet-page _padding-top">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Мой кабинет</a>
+				</li>
+				<li>
+					Личные данные 
+				</li>
+			</ul>
+		</div>
+
+		<section class="cabinet">
+			<div class="container">
+				<div class="cabinet__mobile-nav">
+					<div class="cabinet__mobile-nav-title">
+						Меню раздела
+					</div>
+				</div>
+
+				<h2 class="cabinet__title title-2">
+					Личные данные
+				</h2>
+				<div class="cabinet__body">
+					<div class="cabinet__col-1">
+						<form action="#" class="cabinet__form form">
+							<div class="form__item">
+								<label class="form__label input-item">
+									<span>Имя:</span>
+									<input type="text" class="form__input input">
+								</label>
+							</div>
+							<div class="form__item">
+								<label class="form__label input-item">
+									<span>Фамилия:</span>
+									<input type="text" class="form__input input">
+								</label>
+							</div>
+							<div class="form__item">
+								<label class="form__label input-item">
+									<span>Отчество:</span>
+									<input type="text" class="form__input input">
+								</label>
+							</div>
+							<div class="form__item">
+								<label class="form__label input-item">
+									<span>Телефон:</span>
+									<input type="text" class="form__input input _mask">
+								</label>
+							</div>
+							<div class="form__item">
+								<label class="form__label input-item">
+									<span>E-Mail:</span>
+									<input type="email" class="form__input input">
+								</label>
+							</div>
+							<div class="form__item">
+								<label class="form__label input-item">
+									<span>Новый пароль:</span>
+									<input type="text" class="form__input input">
+								</label>
+							</div>
+							<div class="form__item">
+								<label class="form__label input-item">
+									<span>Подтверждение  пароля:</span>
+									<div class="form__wrap">
+										<input type="text" class="form__input input">
+										<div class="form__input-info">Пароль должен быть не менее 6 символов длиной.</div>
+									</div>
+								</label>
+							</div>
+							<div class="cabinet__form-bottm">
+								<button class="form__submit btn-default" type="submit">сохранить</button>
+								<a href="#" class="btn-default btn-default_white">отмена</a>
+							</div>
+							<div class="form__agreement">
+								Нажимая кнопку вы соглашаетесь  <a href="#">с политикой конфиденциальности</a>
+							</div>
+					</form>
+					</div>
+					<div class="cabinet__col-2">
+						<ul class="aside-list" data-da="cabinet__mobile-nav,last,991.98">
+							<li >
+								<a href="#">Мой кабинет</a>
+							</li>
+							<li>
+								<a href="#">Текущие заказы</a>
+							</li>
+							<li>
+								<a href="#">История заказов</a>
+							</li>
+							<li class="active">
+								<a href="#">Личные данные</a>
+							</li>
+							<li>
+								<a href="#">Корзина</a>
+							</li>
+							<li>
+								<a href="#">Избранное</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viewed-products">
+			<div class="container">
+
+				<h2 class="viewed-products__title title">ранее вы смотрели</h2>
+				<div class="viewed-products__btn-group">
+					<div class="viewed-products__btn viewed-products__btn-prev"></div>
+					<div class="viewed-products__btn viewed-products__btn-next"></div>
+				</div>
+				<div class="viewed-products__slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img1.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>Ремешок Longines</p>
+										<p>L682104216</p>
+										<p>18/16мм</p>
+									</div>
+									<div class="card-mini__price">
+										2 100 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img2.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>OMEGA De Ville</p>
+										<p>Tresor Omega</p>
+										<p>Co-Axial Master</p>
+									</div>
+									<div class="card-mini__price">
+										561 000 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img3.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>Longines Spirit </p>
+										<p>L3.811.4.73.6</p>
+									</div>
+									<div class="card-mini__price">
+										176 500 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img4.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>Ремешок Longines</p>
+										<p>L682104216</p>
+										<p>18/16мм</p>
+									</div>
+									<div class="card-mini__price">
+										605 000 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img1.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>Ремешок Longines</p>
+										<p>L682104216</p>
+										<p>18/16мм</p>
+									</div>
+									<div class="card-mini__price">
+										2 100 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card-mini">
+								<div class="card-mini__img">
+									<img src="img/photo/card-mini-img2.png" alt="">
+								</div>
+								<div class="card-mini__text-wrap">
+									<div class="card-mini__text">
+										<p>OMEGA De Ville</p>
+										<p>Tresor Omega</p>
+										<p>Co-Axial Master</p>
+									</div>
+									<div class="card-mini__price">
+										561 000 ₽
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+	@@include('common/popup/_popup.html',{})
+	@@include('common/popup/_log-in.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

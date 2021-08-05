@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{})
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page message-after-order-page _margin-top">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    Корзина
+                </li>
+            </ul>
+        </div>
+        <section class="message-after-order">
+            <div class="container">
+                <h2 class="message-after-order__title title-2">
+                    заказ принят, спасибо!
+                </h2>
+            </div>
+            <div class="message-after-order__body">
+                <div class="container">
+                   
+                    <div class="message-after-order__text-wrap">
+                        <div class="message-after-order__text">
+                            Заказ №24 от 24.09.2021, 1 товар
+                            на сумму 120 899 ₽ принят,
+                            статус — ожидается оплата.
+                        </div>
+                        <div class="message-after-order__btn-group">
+                            <a href="#" class="btn-default">на главную</a>
+                            <a href="#" class="cabinet__link">
+                                <img src="img/icons/notebook.svg" alt="">
+                                Посмотреть текущие заказы
+                            </a>
+                        </div>
+                    </div>
+                    <div class="message-after-order__img">
+                        <img src="img/photo/message-after-order-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+    @@include('common/popup/_popup.html',{})
+    @@include('common/popup/_popup-form.html',{})
+    @@include('common/popup/_log-in.html',{})
+
+    @@include('_js.html',{})
+</body>
+
+</html>

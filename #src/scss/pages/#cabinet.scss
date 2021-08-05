@@ -177,6 +177,106 @@
             }
         }
     }
+
+    &__form {
+       margin-bottom: 50px;
+
+        @media (min-width: 992px) {
+            max-width: 745px;
+
+            &.cabinet__form_contact {
+                max-width: none;
+            }
+        }
+
+        @media (min-width: 768px) {
+            & .form__label {
+                display: flex;
+                align-items: center;
+
+                &.textarea-item {
+                    align-items: flex-start;
+
+                    & > span {
+                        margin-top: 10px;
+                    }
+                }
+    
+                & > span {
+                    min-width: 220px;
+                    padding-right: 20px;
+                    color: #676767;
+                }
+    
+                & .form__input, & .form__wrap {
+                    flex: 1 1 auto;
+                }
+            }
+
+            &.cabinet__form_contact {
+                & .form__label {
+        
+                    & > span {
+                        min-width: 330px;
+                    }
+        
+                }
+            }
+        }
+    }
+
+    &__form-bottm {
+        margin-top: 76px;
+        border-top: 1px solid #8C8C8C;
+        padding-top: 21px;
+
+        & .form__submit {
+            margin-right: 9px;
+        }
+    }
+    
+    & .catalog__list {
+        & > li {
+            flex: 0 1 100%;
+
+            &:before {
+                display: none;
+            }
+
+            @media (min-width: 992px) {
+                &:hover {
+                    & .p-card__title {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+
+       & .p-card-2__col-4 {
+           min-width: 216px;
+           padding-right: 0;
+       }
+
+       & .p-card-2__group-2 {
+         
+           margin-bottom: 21px;
+
+           @media (min-width: 576px) {
+            margin-right: 66px;
+           }
+       }
+
+       & .p-card__btn-order  {
+           width: 100%;
+       }
+    }
+
+    & .address-block {
+        & .cabinet__title-2 {
+            border-bottom: none;
+            margin-bottom: 5px;
+        }
+    }
 }
 
 .cabinet-info-card {
@@ -247,6 +347,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &.cabinet-box-action_history {
+        padding-top: 0;
+        border: none;
+    }
 
     & > .link-icon-left {
         flex: 0 0 auto;
@@ -403,4 +508,12 @@
             }
         }
     }
+}
+
+.date {
+    font-size: 14px;
+    line-height: 139%;
+    text-align: right;
+    letter-spacing: -0.03em;
+    color: #5e616b;
 }

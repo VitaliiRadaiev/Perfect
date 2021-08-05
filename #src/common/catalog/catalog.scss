@@ -527,6 +527,7 @@
         & > span {
             display: inline-block;
             border-bottom: 1px dashed #b0b0b0;
+            white-space: nowrap;
         }
 
         &.in-stock {
@@ -552,6 +553,20 @@
                 color: red;
             }
         }
+
+        &.in-expects {
+            &:before {
+                position: absolute;
+                font-family: "icomoon";
+                content: "\e901";
+                top: 50%;
+                left: 0;
+                transform: translate(calc(-100% - 7px), -50%);
+                color: #C4C4C4;
+            }
+        }
+
+
     }
 
     &__vendor-code {

@@ -211,7 +211,7 @@ textarea {
 
 ._page {
 	flex: 1 1 auto;
-	padding: 1px 0;
+
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
@@ -727,6 +727,21 @@ button.btn-default {
 	& .social {
 		margin-bottom: 29px;
 	}
+
+	&__wrap {
+		position: relative;
+	}
+
+	&__input-info {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		font-size: 13px;
+		line-height: 210%;
+		letter-spacing: -0.03em;
+		color: #8c8c8c;
+	}
 }
 
 .tab-content {
@@ -859,7 +874,6 @@ button.btn-default {
 			font-size: 15px;
 			line-height: 180%;
 			letter-spacing: -0.03em;
-			
 		}
 
 		& img {
@@ -883,7 +897,6 @@ button.btn-default {
 				clear: both;
 			}
 		}
-
 	}
 	& b {
 		display: block;
@@ -1116,4 +1129,5 @@ button.btn-default {
 @import "pages/#blog";
 @import "pages/#blog-detail";
 @import "pages/#cabinet";
+@import "pages/#message-after-order";
 // ==== AND PAGES =====================================================
