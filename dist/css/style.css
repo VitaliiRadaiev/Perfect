@@ -3865,6 +3865,16 @@ textarea {
   margin-bottom: 0.5em;
 }
 
+.text-content h4 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #3d4d66;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
 .text-content h5 {
   font-weight: bold;
   font-size: 23px;
@@ -3900,7 +3910,8 @@ textarea {
   margin-top: 1em;
 }
 
-.text-content p.text-big {
+.text-content p.text-big,
+.text-content p big {
   font-weight: 600;
   font-size: 22px;
   line-height: 150%;
@@ -3949,6 +3960,14 @@ textarea {
   margin-top: 2.7em;
 }
 
+.text-content b a {
+  color: #BCA47C;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .text-content ul {
   margin-bottom: 1.5em;
 }
@@ -3967,6 +3986,22 @@ textarea {
   content: "•";
   top: 0px;
   left: 0;
+}
+
+.text-content ul > li a {
+  color: #BCA47C;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.text-content ol a {
+  color: #BCA47C;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .text-content q {
@@ -4002,6 +4037,14 @@ textarea {
   display: none;
 }
 
+.text-content q a {
+  color: #BCA47C;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .text-content figure {
   margin: 3.6em 0 2em;
 }
@@ -4021,7 +4064,7 @@ textarea {
   height: 41px;
   font-weight: bold;
   font-size: 15px;
-  line-height: 222%;
+  line-height: 120%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #8c8c8c;
@@ -4030,6 +4073,10 @@ textarea {
 
 .text-content table th:first-child {
   text-align: left;
+}
+
+.text-content table th:not(:last-child) {
+  padding-right: 15px;
 }
 
 .text-content table td {
@@ -4041,14 +4088,29 @@ textarea {
   font-size: 15px;
   line-height: 1.2em;
   letter-spacing: -0.03em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text-content table td:not(:last-child) {
+  padding-right: 15px;
 }
 
 .text-content table td:first-child {
   text-align: left;
+  max-width: 200px;
 }
 
 .text-content table tr:nth-child(even) td {
   background: rgba(196, 196, 196, 0.2);
+}
+
+.text-content table a {
+  color: #BCA47C;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .text-content .row {
@@ -4084,6 +4146,14 @@ textarea {
 
 .text-content .list .row [class^="col"] img {
   height: 100%;
+}
+
+.table-scroll-x {
+  overflow-x: auto;
+}
+
+.table-scroll-x table {
+  min-width: 500px;
 }
 
 .header {
@@ -10881,6 +10951,26 @@ textarea {
     color: #9D8660;
   }
 
+  .text-content b a:hover {
+    color: #9D8660;
+  }
+
+  .text-content ul > li a:hover {
+    color: #9D8660;
+  }
+
+  .text-content ol a:hover {
+    color: #9D8660;
+  }
+
+  .text-content q a:hover {
+    color: #9D8660;
+  }
+
+  .text-content table a:hover {
+    color: #9D8660;
+  }
+
   .header._is-scroll .header__top {
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
@@ -12498,12 +12588,19 @@ textarea {
     line-height: 150%;
   }
 
+  .text-content h4 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
   .text-content h5 {
     font-size: 22px;
     line-height: 140%;
   }
 
-  .text-content p.text-big {
+  .text-content p.text-big,
+  .text-content p big {
     font-weight: bold;
     font-size: 14px;
     line-height: 150%;

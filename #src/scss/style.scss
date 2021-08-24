@@ -804,6 +804,19 @@ button.btn-default {
 		}
 	}
 	& h4 {
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 150%;
+		letter-spacing: -0.03em;
+		color: #3d4d66;
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+
+		@media (max-width: $md3+px) {
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 140%;
+		}
 	}
 
 	& h5 {
@@ -844,7 +857,7 @@ button.btn-default {
 			margin-top: 1em;
 		}
 
-		&.text-big {
+		&.text-big, & big {
 			font-weight: 600;
 			font-size: 22px;
 			line-height: 150%;
@@ -916,6 +929,18 @@ button.btn-default {
 		& ~ h3 {
 			margin-top: 2.7em;
 		}
+
+		& a {
+			color: $mainColor;
+			text-decoration: underline;
+			transition: all 0.3s ease;
+
+			@media (min-width: 992px) {
+				&:hover {
+					color: $hover2;
+				}
+			}
+		}
 	}
 
 	& ul {
@@ -935,10 +960,34 @@ button.btn-default {
 				top: 0px;
 				left: 0;
 			}
+
+			& a {
+				color: $mainColor;
+				text-decoration: underline;
+				transition: all 0.3s ease;
+	
+				@media (min-width: 992px) {
+					&:hover {
+						color: $hover2;
+					}
+				}
+			}
 		}
 	}
 
 	& ol {
+
+		& a {
+			color: $mainColor;
+			text-decoration: underline;
+			transition: all 0.3s ease;
+
+			@media (min-width: 992px) {
+				&:hover {
+					color: $hover2;
+				}
+			}
+		}
 	}
 
 	q {
@@ -974,6 +1023,18 @@ button.btn-default {
 		@media (max-width: $md3+px) {
 			font-size: 16px;
 		}
+
+		& a {
+			color: $mainColor;
+			text-decoration: underline;
+			transition: all 0.3s ease;
+
+			@media (min-width: 992px) {
+				&:hover {
+					color: $hover2;
+				}
+			}
+		}
 	}
 
 	& figure {
@@ -1006,7 +1067,7 @@ button.btn-default {
 			height: 41px;
 			font-weight: bold;
 			font-size: 15px;
-			line-height: 222%;
+			line-height: 120%;
 			letter-spacing: -0.03em;
 			text-transform: uppercase;
 			color: #8c8c8c;
@@ -1020,6 +1081,10 @@ button.btn-default {
 			&:first-child {
 				text-align: left;
 			}
+
+			&:not(:last-child) {
+				padding-right: 15px;
+			}
 		}
 
 		& td {
@@ -1031,6 +1096,12 @@ button.btn-default {
 			font-size: 15px;
 			line-height: 1.2em;
 			letter-spacing: -0.03em;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			&:not(:last-child) {
+				padding-right: 15px;
+			}
 
 			@media (max-width: $md3+px) {
 				font-size: 12px;
@@ -1038,6 +1109,7 @@ button.btn-default {
 
 			&:first-child {
 				text-align: left;
+				max-width: 200px;
 			}
 		}
 
@@ -1045,6 +1117,18 @@ button.btn-default {
 			&:nth-child(even) {
 				& td {
 					background: rgba(#c4c4c4, 0.2);
+				}
+			}
+		}
+
+		& a {
+			color: $mainColor;
+			text-decoration: underline;
+			transition: all 0.3s ease;
+
+			@media (min-width: 992px) {
+				&:hover {
+					color: $hover2;
 				}
 			}
 		}
@@ -1097,6 +1181,15 @@ button.btn-default {
 	}
 }
 // === and TEXT CONTETN BLOCK ========================================================================
+
+.table-scroll-x {
+	overflow-x: auto;
+
+	& table {
+		min-width: 500px;
+	}
+}
+
 
 // ==== BLOCKS =====================================================
 @import "../common/header/#header";
