@@ -173,7 +173,7 @@
 
             &.active {
                 background-color: $mainColor;
-
+                pointer-events: none;
                 & svg {
                     & rect {
                         fill: #fff;

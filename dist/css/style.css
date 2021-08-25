@@ -3141,6 +3141,10 @@ button.swiper-pagination-bullet {
   outline: none;
 }
 
+[disabled] {
+  pointer-events: none;
+}
+
 a:focus,
 a:active {
   outline: none;
@@ -5230,6 +5234,7 @@ textarea {
 
 .catalog__list-view > a.active {
   background-color: #BCA47C;
+  pointer-events: none;
 }
 
 .catalog__list-view > a.active svg rect {
