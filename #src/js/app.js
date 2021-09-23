@@ -13,7 +13,11 @@ window.addEventListener('load', function () {
 		if (wrapper) {
 			let header = document.querySelector('.header');
 			if(!header.classList.contains('._is-scroll')) {
-				const setPedding = () => wrapper.style.marginTop = header.clientHeight - 1 + 'px';
+				const setPedding = () => {
+					if(document.documentElement.clientWidth < 992) {
+						wrapper.style.marginTop = header.clientHeight - 1 + 'px';
+					}
+				} 
 				setPedding();
 				window.addEventListener('resize', () => {
 					if(!header.classList.contains('._is-scroll')) {

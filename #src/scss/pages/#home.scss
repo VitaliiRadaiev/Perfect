@@ -9,7 +9,6 @@
 }
 
 .promo-header {
-    margin-top: 173px;
     position: relative;
 
     @media (max-width: $md2+px) {
@@ -39,14 +38,14 @@
 
     &__body {
         min-height: 437px;
-        padding-top: 77px;
-        padding-bottom: 56px;
+        padding-top: 77px !important;
+        padding-bottom: 56px !important;
         position: relative;
         z-index: 2;
 
         @media (max-width: 575.98px) {
-            padding-top: 19px;
-            padding-bottom: 20px;
+            padding-top: 19px !important;
+            padding-bottom: 20px !important;
             min-height: 479px;
         }
     }

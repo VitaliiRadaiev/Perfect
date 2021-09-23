@@ -1,23 +1,37 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 501;
     pointer-events: none;
+
+    @media (max-width: $md2+px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 501;
+    }
 
     &._is-scroll {
         & .header__scroll {
-            transition: all 0.4s ease 0.5s;
+            transition: all 0.4s ease;
             transform: translateY(0);
         }
 
-        & .header__top {
-            @media (min-width: 992px) {
-                transform: translateY(-100%);
-                transition: all 0.4s ease;
-            }
+        // & .header__top {
+        //     @media (min-width: 992px) {
+        //         transform: translateY(-100%);
+        //         transition: all 0.4s ease;
+        //     }
+        // }
+    }
+
+    &__scroll {
+        @media (min-width: 992px) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 501;
         }
+
     }
 
     &__top {

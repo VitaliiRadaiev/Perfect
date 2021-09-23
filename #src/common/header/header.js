@@ -3,7 +3,7 @@ if($header) {
     let row1Close = false;
     let $headerRow1 = document.querySelector('.header__row-1');
     window.addEventListener('scroll', () => {
-        if(window.pageYOffset > 50) {
+        if(window.pageYOffset > 100) {
             $header.classList.add('_is-scroll')
 
             if(document.documentElement.clientWidth < 992) {
