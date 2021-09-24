@@ -5709,6 +5709,13 @@ textarea {
   padding: 20px 20px 17px;
 }
 
+.p-card-2 .label-diameter {
+  font-size: 11px;
+  opacity: 0.5;
+  left: 11px;
+  bottom: 10px;
+}
+
 .p-card-2__col-1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(13% + 53px);
@@ -5916,6 +5923,14 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.p-card-3 .label-diameter {
+  font-size: 9px;
+  opacity: 0.5;
+  left: 29px;
+  top: 4px;
+  bottom: auto;
 }
 
 .p-card-3__img {
@@ -12905,6 +12920,13 @@ textarea {
         flex-wrap: wrap;
   }
 
+  .p-card-2 .label-diameter {
+    right: 11px;
+    left: auto;
+    bottom: auto;
+    top: 11px;
+  }
+
   .p-card-2__col-1 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 85px;
@@ -12975,6 +12997,12 @@ textarea {
     padding: 10px;
     display: block;
     text-align: center;
+  }
+
+  .p-card-3 .label-diameter {
+    top: 11px;
+    left: 11px;
+    font-size: 11px;
   }
 
   .p-card-3__img {

@@ -678,6 +678,20 @@
         flex-wrap: wrap;
     }
 
+    & .label-diameter {
+        font-size: 11px;
+        opacity: 0.5;
+        left: 11px;
+        bottom: 10px;
+
+        @media (max-width: $md3+px) {
+            right: 11px;
+            left: auto;
+            bottom: auto;
+            top: 11px;
+        }
+    }
+
     &__col-1 {
         flex: 0 0 calc(13% + 53px);
         margin-right: 25px;
@@ -952,6 +966,21 @@
         padding: 10px;
         display: block;
         text-align: center;
+    }
+
+    & .label-diameter {
+        font-size: 9px;
+        opacity: 0.5;
+        left: 29px;
+        top: 4px;
+        bottom: auto;
+
+        @media (max-width: $md3+px) {
+            top: 11px;
+            left: 11px;
+            font-size: 11px;
+        }
+
     }
 
     &__img {
