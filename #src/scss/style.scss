@@ -319,7 +319,22 @@ textarea {
 .text {
 }
 // === and title ========================================================================
-
+.label-diameter {
+	display: inline-flex;
+	border: 1px solid #5e616b;
+	border-radius: 0.25em;
+	min-height: 1.6875em;
+	align-items: center;
+	padding: 0.31em 0.625em;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: -0.03em;
+	color: #5e616b;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 5;
+}
 // === btn ========================================================================
 .btn-default {
 	display: inline-flex;
@@ -860,7 +875,8 @@ button.btn-default {
 			margin-top: 1em;
 		}
 
-		&.text-big, & big {
+		&.text-big,
+		& big {
 			font-weight: 600;
 			font-size: 22px;
 			line-height: 150%;
@@ -968,7 +984,7 @@ button.btn-default {
 				color: $mainColor;
 				text-decoration: underline;
 				transition: all 0.3s ease;
-	
+
 				@media (min-width: 992px) {
 					&:hover {
 						color: $hover2;
@@ -979,7 +995,6 @@ button.btn-default {
 	}
 
 	& ol {
-
 		& a {
 			color: $mainColor;
 			text-decoration: underline;
@@ -1192,7 +1207,6 @@ button.btn-default {
 		min-width: 500px;
 	}
 }
-
 
 // ==== BLOCKS =====================================================
 @import "../common/header/#header";

@@ -74,6 +74,15 @@
             }
         }
 
+        & .label-diameter {
+            left: 15px;
+            bottom: 10px;
+            @media (max-width: $md3+px) {
+                left: 2px;
+                
+            }
+        }
+
         & .p-card__star {
             top: 24px;
             right: 5px;

@@ -388,6 +388,12 @@
     position: relative;
     transition: all 0.3s ease;
 
+    & .label-diameter {
+        font-size: 11px;
+        opacity: 0.5;
+        left: -10px;
+    }
+
     &__btn-close {
         position: absolute;
         top: 32px;
@@ -562,11 +568,9 @@
                 top: 50%;
                 left: 0;
                 transform: translate(calc(-100% - 7px), -50%);
-                color: #C4C4C4;
+                color: #c4c4c4;
             }
         }
-
-
     }
 
     &__vendor-code {
@@ -576,7 +580,26 @@
         color: #5e616b;
         margin-bottom: 26px;
     }
-
+    &__old-price {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 139%;
+        letter-spacing: -0.03em;
+        color: #c4c4c4;
+        position: relative;
+        display: inline-block;
+        align-self: center;
+        &:before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-6deg);
+            width: calc(100% + 5px);
+            height: 2px;
+            background-color: #ce1320;
+        }
+    }
     &__price {
         font-weight: bold;
         font-size: 26px;
@@ -1011,6 +1034,14 @@
             margin-bottom: 0;
             margin-right: 46px;
         }
+
+        & > span {
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%) translateY(-74%);
+            white-space: nowrap;
+        }
+
     }
 
     & .p-card__btn-order {
