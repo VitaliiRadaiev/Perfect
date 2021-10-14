@@ -4179,6 +4179,8 @@ textarea {
 
 .header {
   pointer-events: none;
+  position: relative;
+  z-index: 49;
 }
 
 .header._is-scroll .header__scroll {
