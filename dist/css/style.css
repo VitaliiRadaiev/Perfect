@@ -7294,6 +7294,31 @@ textarea {
   min-width: 0;
 }
 
+.single-product__old-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.single-product__old-price > * {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.single-product__old-price .p-card__old-price {
+  margin-right: 20px;
+}
+
+.single-product__old-price .p-card__label {
+  position: static;
+  font-size: 16px;
+}
+
 .single-product__gallery {
   margin-bottom: 50px;
   position: relative;
