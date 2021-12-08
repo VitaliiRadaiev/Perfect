@@ -3344,6 +3344,10 @@ textarea {
   width: 100%;
 }
 
+.bg {
+  background: rgba(12, 27, 49, 0.1);
+}
+
 .ibg {
   position: relative;
 }
@@ -4180,7 +4184,7 @@ textarea {
 .header {
   pointer-events: none;
   position: relative;
-  z-index: 49;
+  z-index: 501;
 }
 
 .header._is-scroll .header__scroll {
@@ -6109,7 +6113,7 @@ textarea {
   background: rgba(12, 27, 49, 0.1);
 }
 
-.address-block.address-block_v2 {
+.address-block.address-block_v2:not(.bg) {
   background: transparent;
   padding: 0;
   margin-bottom: 0;
@@ -6219,6 +6223,10 @@ textarea {
   color: #0c1b31;
 }
 
+.address-block__item-address > p {
+  margin-bottom: 0;
+}
+
 .address-block__item-address > p big {
   text-transform: uppercase;
   font-size: 22px;
@@ -6233,12 +6241,20 @@ textarea {
   color: #bca47c;
 }
 
+.address-block__item-time table {
+  margin: 0;
+  width: auto;
+}
+
 .address-block__item-time table td {
   font-size: 17px;
   line-height: 145%;
   letter-spacing: -0.03em;
   color: #bca47c;
   text-transform: uppercase;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0;
 }
 
 .address-block__item-time table td:first-child {
@@ -10486,7 +10502,7 @@ textarea {
     margin: 0;
   }
 
-  .address-block.address-block_v2 .address-block__title {
+  .address-block.address-block_v2:not(.bg) .address-block__title {
     font-weight: bold;
     font-size: 35px;
     line-height: 150%;
