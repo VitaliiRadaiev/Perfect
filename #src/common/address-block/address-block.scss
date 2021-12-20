@@ -102,8 +102,11 @@
         }
 
         & .address-block__item-map {
-            min-height: 340px;
-            height: auto;
+            @media (min-width: 768px) {
+                min-height: 340px;
+                height: auto;
+            }
+
             margin-top: 0;
         }
     }

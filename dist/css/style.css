@@ -6159,8 +6159,6 @@ textarea {
 }
 
 .address-block.address-block_contact .address-block__item-map {
-  min-height: 340px;
-  height: auto;
   margin-top: 0;
 }
 
@@ -10546,6 +10544,11 @@ textarea {
 
   .address-block.address-block_contact .address-block__title {
     font-size: 30px !important;
+  }
+
+  .address-block.address-block_contact .address-block__item-map {
+    min-height: 340px;
+    height: auto;
   }
 
   .address-block__body {
