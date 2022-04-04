@@ -1000,7 +1000,30 @@ document.addEventListener('keydown', function(e) {
 				Element.prototype.mozMatchesSelector;
 		}
 	})();
-// === AND Polyfill ===;
+// === AND Polyfill ===
+
+// добавление API попапа в глобалную видимость
+window.popup = {
+	open(id) {
+		if (!id) return;
+
+		let popup = document.querySelector(id);
+
+		if (!popup) return;
+
+		popupOpen(popup);
+	},
+	close(id) {
+		if (!id) return;
+
+		let popup = document.querySelector(id);
+
+		if (!popup) return;
+
+		popupClose(popup);
+	}
+}
+;
 	let $header = document.querySelector('.header');
 if($header) {
     let row1Close = false;

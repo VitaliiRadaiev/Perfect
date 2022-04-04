@@ -141,3 +141,25 @@ document.addEventListener('keydown', function(e) {
 		}
 	})();
 // === AND Polyfill ===
+
+// добавление API попапа в глобалную видимость
+window.popup = {
+	open(id) {
+		if (!id) return;
+
+		let popup = document.querySelector(id);
+
+		if (!popup) return;
+
+		popupOpen(popup);
+	},
+	close(id) {
+		if (!id) return;
+
+		let popup = document.querySelector(id);
+
+		if (!popup) return;
+
+		popupClose(popup);
+	}
+}

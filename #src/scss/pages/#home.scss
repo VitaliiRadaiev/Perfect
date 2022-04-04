@@ -144,8 +144,9 @@
     &__list {
         margin: 0 -12px 22px;
         display: flex;
+        flex-wrap: wrap;
         background-color: #fff;
-        padding: 7px 9px 7px;
+        padding: 7px 9px 3px;
         position: relative;
         z-index: 2;
 
@@ -159,6 +160,7 @@
         & li {
             flex: 0 1 20%;
             padding: 0 2px;
+            margin-bottom: 4px;
 
             @media (max-width: $md2+px) {
                 flex: 0 1 50%;
@@ -168,6 +170,64 @@
             @media (max-width: $md3+px) {
                 flex: 0 1 100%;
                 margin-bottom: 8px;
+            }
+
+
+            &.advantages__list-last {
+                @media (min-width: 992px) {
+                    flex: 0 1 100%;
+
+                    & .advantages__list-item {
+                        display: flex;
+                        align-items: center;
+                        min-height: 51px;
+                    }
+    
+                    & .advantages__list-title {
+                        max-width: none;
+                        margin-right: 18px;
+                    }
+    
+                    & .advantages__list-subtitle {
+                        max-width: none;
+                        margin-right: 18px;
+                    }
+                    
+                    & .advantages__list-icon {
+                        position: static;
+                        top: 0%;
+                        right: 0;
+                        z-index: 1;
+                        transform: translateY(0%);
+                        height: auto;
+                
+                        & img {
+                            height: auto;
+                            width: auto;
+                        }
+                    }
+                }
+
+                @media (max-width: $md2+px) {
+                    & .advantages__list-title {
+                        max-width: 240px;
+                    }
+                    & .advantages__list-subtitle {
+                        max-width: 265px;
+                    }
+                    & .advantages__list-icon {
+                        height: auto;
+                        width: calc(100% - 40px);
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        right: 0;
+
+                        & img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
     }

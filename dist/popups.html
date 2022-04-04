@@ -362,406 +362,26 @@
 
     <!-- == // TOP LINE ================== -->
 
-
-    <main class="_page order-page _padding-top">
+    <div style="padding-top: 150px; padding-bottom: 150px;">
         <div class="container">
-            <ul class="breadcrumb">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    Корзина
-                </li>
-            </ul>
+            <div class="text-content">
+                <ul>
+                    <li>
+                        <a href="#popupMessage1" class="popup-link">popup message 1</a>
+                    </li>
+                    <li>
+                        <a href="#popupMessage2" class="popup-link">popup message 2</a>
+                    </li>
+                    <li>
+                        <a href="#popupMessage3" class="popup-link">popup message 3</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <section class="order">
-            <form class="container form">
-                <h2 class="order__title title-2">
-                    оформление заказа
-                </h2>
-
-                <div class="order__body">
-                    <div class="order__content">
-                        <div class="order__box-1 box">
-                            <div class="box__head">
-                                <div class="box__col-1">
-                                    <h3 class="order__title-3 title-3">Товары в заказе</h3>
-                                </div>
-                                <div class="box__col-2">
-                                    <a href="#" class="order__link">Изменить</a>
-                                </div>
-                            </div>
-                            <div class="box__content">
-                                <div class="order__products">
-                                    <ul class="catalog__list">
-                                        <li>
-                                            <div class="order-p-card p-card-3">
-                                                <div class="p-card-3__img">
-                                                    <img src="img/photo/watch2.png" alt="">
-                                                </div>
-                                                <div class="p-card-3__text">
-                                                    <a href="#" class="p-card__title">
-                                                        longines spirit l3.811.4.73.6
-                                                    </a>
-                                                    <div class="p-card__vendor-code">
-                                                        Артикул: L3.811.4.73.6
-                                                    </div>
-                                                </div>
-                                                <div class="p-card-3__quantity">
-                                                    <div class="quantity">
-    <div class="quantity__button quantity__button_minus"></div>
-    <div class="quantity__input">
-        <input autocomplete="off" type="text" value="1">
     </div>
-    <div class="quantity__button quantity__button_plus"></div>
-</div>
-                                                </div>
-                                                <div class="p-card__price">176 500 ₽</div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="order-p-card p-card-3">
-                                                <div class="p-card-3__img">
-                                                    <img src="img/photo/watch2.png" alt="">
-                                                </div>
-                                                <div class="p-card-3__text">
-                                                    <a href="#" class="p-card__title">
-                                                        longines spirit l3.811.4.73.6
-                                                    </a>
-                                                    <div class="p-card__vendor-code">
-                                                        Артикул: L3.811.4.73.6
-                                                    </div>
-                                                </div>
-                                                <div class="p-card-3__quantity">
-                                                    <div class="quantity">
-    <div class="quantity__button quantity__button_minus"></div>
-    <div class="quantity__input">
-        <input autocomplete="off" type="text" value="1">
-    </div>
-    <div class="quantity__button quantity__button_plus"></div>
-</div>
-                                                </div>
-                                                <div class="p-card__price">176 500 ₽</div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="order__coupon border-bottom">
-                                    <label class="basket__coupon">
-                                        <span>Применить купон</span>
-                                        <input type="text" class="basket__coupon-input input">
-                                    </label>
-                                </div>
-                                <div class="order__btn-group">
-                                    <div class="order__btn-group-col-1"></div>
-                                    <div class="order__btn-group-col-2">
-                                        <a href="#" class="order__btn btn-default">
-                                            далее
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="order__box-2 box">
-                            <div class="box__head">
-                                <div class="box__col-1">
-                                    <h3 class="order__title-3 title-3">Доставка</h3>
-                                </div>
-                                <div class="box__col-2">
-                                    <a href="#" class="order__link">Изменить</a>
-                                </div>
-                            </div>
-                            <div class="box__content">
-                                <div class="order-search">
-                                    <label class="order-search__label">
-                                        <span>Город, адрес, станция метро</span>
-                                        <div class="order-search__input-wrap">
-                                            <input class="order-search__input input" type="text">
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <div class="delivery tabs">
-                                    <div class="delivery__method">
-                                        <a href="#tab-1" class="delivery__method-item tab-trigger">
-                                            Самовывоз из магазина
-                                        </a>
-                                        <a href="#tab-2" class="delivery__method-item tab-trigger active">
-                                            Самовывоз СДЭК
-                                        </a>
-                                        <a href="#tab-3" class="delivery__method-item tab-trigger">
-                                            Доставка курьером СДЭК
-                                        </a>
-                                    </div>
-                                    <div id="tab-1" class="tab-content">
-                                        <div class="delivery__addresses">
-                                            <label class="delivery__addresses-item">
-                                                <input name="address" type="radio" checked>
-                                                <div class="delivery__addresses-item-check-icon"></div>
-                                                <div class="delivery__addresses-item-icon">
-                                                    <img src="img/icons/local-grey.svg" alt="">
-                                                </div>
-                                                <div class="delivery__addresses-item-text">
-                                                    <div class="delivery__addresses-item-address">
-                                                        <p>
-                                                            м. Маяковская, 
-                                                        </p>
-                                                        <p>
-                                                            ул. 1-я Тверская-Ямская, 6 
-                                                        </p>
-                                                    </div>
-                                                    <div class="delivery__addresses-item-time">
-                                                        <p>пн — сб с 10:00 до 20:00, </p>
-                                                        <p>вс с 10:00 до 18:00</p>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                            <label class="delivery__addresses-item">
-                                                <input name="address" type="radio">
-                                                <div class="delivery__addresses-item-check-icon"></div>
-                                                <div class="delivery__addresses-item-icon">
-                                                    <img src="img/icons/local-grey.svg" alt="">
-                                                </div>
-                                                <div class="delivery__addresses-item-text">
-                                                    <div class="delivery__addresses-item-address">
-                                                        <p>
-                                                            м. Полянка, 
-                                                        </p>
-                                                        <p>
-                                                            ул. Большая Якиманка, 19
-                                                        </p>
-                                                    </div>
-                                                    <div class="delivery__addresses-item-time">
-                                                        <p>пн — сб с 10:00 до 20:00, </p>
-                                                        <p>вс с 10:00 до 18:00</p>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div id="tab-2" class="tab-content active">
-                                        <div class="delivery__map">
-                                            <iframe
-                                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A2db3e8ff124481e7763d3527bf4ffde0b39240367e433371b0bce6c18ac8017f&amp;source=constructor"
-                                                width="100%" height="440" frameborder="0"></iframe>
-                                        </div>
-                                    </div>
-                                    <div id="tab-3" class="tab-content">
-                                        <div class="delivery__addresses">
-                                            <label class="delivery__addresses-item">
-                                                <input name="address2" type="radio" checked>
-                                                <div class="delivery__addresses-item-check-icon"></div>
-                                                <div class="delivery__addresses-item-icon">
-                                                    <img src="img/icons/local-grey.svg" alt="">
-                                                </div>
-                                                <div class="delivery__addresses-item-text">
-                                                    <div class="delivery__addresses-item-address">
-                                                        <p>
-                                                            м. Маяковская, 
-                                                        </p>
-                                                        <p>
-                                                            ул. 1-я Тверская-Ямская, 6 
-                                                        </p>
-                                                    </div>
-                                                    <div class="delivery__addresses-item-time">
-                                                        <p>пн — сб с 10:00 до 20:00, </p>
-                                                        <p>вс с 10:00 до 18:00</p>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                            <label class="delivery__addresses-item">
-                                                <input name="address2" type="radio">
-                                                <div class="delivery__addresses-item-check-icon"></div>
-                                                <div class="delivery__addresses-item-icon">
-                                                    <img src="img/icons/local-grey.svg" alt="">
-                                                </div>
-                                                <div class="delivery__addresses-item-text">
-                                                    <div class="delivery__addresses-item-address">
-                                                        <p>
-                                                            м. Полянка, 
-                                                        </p>
-                                                        <p>
-                                                            ул. Большая Якиманка, 19
-                                                        </p>
-                                                    </div>
-                                                    <div class="delivery__addresses-item-time">
-                                                        <p>пн — сб с 10:00 до 20:00, </p>
-                                                        <p>вс с 10:00 до 18:00</p>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="delivery__cost">
-                                        <span>Стоимость доставки:</span>
-                                        0 ₽
-                                    </div>
-                                </div>
-
-                                <div class="order__btn-group">
-                                    <div class="order__btn-group-col-1">
-                                        <a href="#" class="order__btn-back btn-default">
-                                            назад
-                                        </a>
-                                    </div>
-                                    <div class="order__btn-group-col-2">
-                                        <a href="#" class="order__btn btn-default">
-                                            далее
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="order__box-3 box">
-                            <div class="box__head">
-                                <div class="box__col-1">
-                                    <h3 class="order__title-3 title-3">Оплата</h3>
-                                </div>
-                                <div class="box__col-2">
-                                    <a href="#" class="order__link">Изменить</a>
-                                </div>
-                            </div>
-                            <div class="box__content">
-                                <div class="payment">
-                                    <div class="payment__method">
-                                        <label class="payment__method-item">
-                                            <div class="payment__method-item-wrap">
-                                                <input name="payment" type="radio" checked>
-                                                <div class="payment__method-item-check-icon"></div>
-                                                <div class="payment__method-item-icon">
-                                                    <img src="img/icons/radio-icon-1.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="payment__method-item-title">При получении</div>
-                                        </label>
-                                        <label class="payment__method-item">
-                                            <div class="payment__method-item-wrap">
-                                                <input name="payment" type="radio">
-                                                <div class="payment__method-item-check-icon"></div>
-                                                <div class="payment__method-item-icon">
-                                                    <img src="img/icons/radio-icon-2.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="payment__method-item-title">Банковской картой</div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="order__btn-group">
-                                    <div class="order__btn-group-col-1">
-                                        <a href="#" class="order__btn-back btn-default">
-                                            назад
-                                        </a>
-                                    </div>
-                                    <div class="order__btn-group-col-2">
-                                        <a href="#" class="order__btn btn-default">
-                                            далее
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="order__box-4 box">
-                            <div class="box__head">
-                                <div class="box__col-1">
-                                    <h3 class="order__title-3 title-3">Оплата</h3>
-                                </div>
-                                <div class="box__col-2">
-                                    <a href="#" class="order__link">Изменить</a>
-                                </div>
-                            </div>
-                            <div class="box__content">
-
-                                <div class="form__item">
-                                    <label class="form__label input-item">
-                                        <span>Фамилия, имя и отчество <span>*</span></span>
-                                        <input type="text" class="form__input input">
-                                    </label>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label input-item">
-                                        <span>Телефон<span>*</span></span>
-                                        <input type="text" class="form__input input _mask"
-                                            placeholder="+7(___) ___-__-__">
-                                    </label>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label input-item">
-                                        <span>E-mail <span>*</span></span>
-                                        <input type="email" class="form__input input">
-                                    </label>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label input-item input-item_address">
-                                        <span>Адрес доставки</span>
-                                        <textarea class="textarea"></textarea>
-                                    </label>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label input-item">
-                                        <span>Комментарий к заказу</span>
-                                        <textarea class="textarea"></textarea>
-                                    </label>
-                                </div>
 
 
-                                <div class="order__btn-group">
-                                    <div class="order__btn-group-col-1">
-                                        <a href="#" class="order__btn-back btn-default">
-                                            назад
-                                        </a>
-                                    </div>
-                                    <div class="order__btn-group-col-2">
-                                        <a href="#" class="order__btn btn-default">
-                                            далее
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form__agreement">
-                            Нажимая кнопку вы соглашаетесь <a href="#">с политикой конфиденциальности</a>
-                        </div>
-                        <button class="form__submit btn-default" type="submit">оформить заказ</button>
-                    </div>
-                    <div class="order__aside">
-                        <div class="price-card">
-                            <div class="price-card__item">
-                                <div class="price-card__item-text">Товаров на:</div>
-                                <div class="price-card__item-num p-card__price">
-                                    <span>408 000 ₽</span>
-                                    388 000 ₽
-                                </div>
-                            </div>
-                            <div class="price-card__item">
-                                <div class="price-card__item-text">Доставка:</div>
-                                <div class="price-card__item-num p-card__price">
-                                    0 ₽
-                                </div>
-                            </div>
-                            <div class="price-card__item">
-                                <div class="price-card__item-text">Экономия:</div>
-                                <div class="price-card__item-num p-card__price">
-                                    20 000 ₽
-                                </div>
-                            </div>
-                            <div class="price-card__total">
-                                <div class="basket__total">
-                                    <div class="basket__total-col-1">
-                                        <p>Итого:</p>
-                                        <div class="basket__total-tax">Сумма НДС: 0 ₽</div>
-                                    </div>
-                                    <div class="basket__total-col-2 basket__total-cost">
-                                        388 000 ₽
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </main>
+
 
 
     <!-- == FOOTER ================== -->
@@ -1022,6 +642,69 @@
 	</div>
 </div>
 
+    <div class="popup popup-message" id="popupMessage1">
+    <!-- use popup API  popup.open('#popupMessage1'), popup.close('#popupMessage1') -->
+	<div class="popup_body">
+		<div class="popup_content">
+            <div class="form__close close-popup"><span></span></div>
+			<div class="message">
+                <div class="message__img">
+                    <img src="img/photo/message-img-1.png" alt="">
+                </div>
+                <div class="message__text-wrap">
+                    <h3 class="message__title title-3">В праздник День Победы</h3>
+                    <div class="message__text text-content">
+                        <p>
+                            <strong>9 мая</strong> наши магазины не работают. Вы можете сделать заказ онлайн. Наш менеджер свяжется с вами в первый рабочий день.                        </p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+    <div class="popup popup-message" id="popupMessage2">
+    <!-- use popup API  popup.open('#popupMessage2'), popup.close('#popupMessage2') -->
+	<div class="popup_body">
+		<div class="popup_content">
+            <div class="form__close close-popup"><span></span></div>
+			<div class="message">
+                <div class="message__img">
+                    <img src="img/photo/message-img-2.png" alt="">
+                </div>
+                <div class="message__text-wrap">
+                    <h3 class="message__title title-3">В праздник Пасхи</h3>
+                    <div class="message__text text-content">
+                        <p>
+                            <strong>24 апреля</strong> наши магазины не работают. Вы можете сделать заказ онлайн. Наш менеджер свяжется с вами в первый рабочий день.
+                        </p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+    <div class="popup popup-message" id="popupMessage3">
+    <!-- use popup API  popup.open('#popupMessage3'), popup.close('#popupMessage3') -->
+	<div class="popup_body">
+		<div class="popup_content">
+            <div class="form__close close-popup"><span></span></div>
+			<div class="message">
+                <div class="message__img">
+                    <img src="img/photo/message-img-3.png" alt="">
+                </div>
+                <div class="message__text-wrap">
+                    <h3 class="message__title title-3">В Новогодние праздники</h3>
+                    <div class="message__text text-content">
+                        <p><strong>1, 2 и 7 января</strong> наши магазины не работают. Вы можете сделать заказ онлайн. Наш менеджер свяжется с вами в первый рабочий день.</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
     
 <script src="js/vendors.js"></script>
 <script src="js/app.js"></script>
@@ -1029,6 +712,7 @@
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
 defer
 ></script> -->
+
 </body>
 
 </html>

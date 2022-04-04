@@ -3123,6 +3123,60 @@ button.swiper-pagination-bullet {
           transform: translateY(-50%);
 }
 
+.popup-message .popup_content {
+  border-radius: 13px;
+  width: 100%;
+  max-width: 800px;
+  padding: 50px 36px 50px 26px;
+  text-align: left;
+}
+
+.message__img {
+  height: 290px;
+  width: 288px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message__img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.message__title.title-3 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 131%;
+  letter-spacing: -0.03em;
+  color: #0e3c67;
+  margin-bottom: 11px;
+}
+
+.message__text.text-content {
+  font-size: 18px;
+}
+
+.message__text.text-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.message__text strong {
+  color: #BCA47C;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -7092,8 +7146,10 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #fff;
-  padding: 7px 9px 7px;
+  padding: 7px 9px 3px;
   position: relative;
   z-index: 2;
 }
@@ -7103,6 +7159,7 @@ textarea {
       -ms-flex: 0 1 20%;
           flex: 0 1 20%;
   padding: 0 2px;
+  margin-bottom: 4px;
 }
 
 .advantages__list-item {
@@ -10447,6 +10504,15 @@ textarea {
         align-self: stretch !important;
   }
 
+  .message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .text-content p.has-img {
     padding-top: 21px;
   }
@@ -11307,9 +11373,9 @@ textarea {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    padding: 0px 14px 0px 17px;
+    padding: 0px 14px 0px 14px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 23px;
     color: #ffffff;
     letter-spacing: 0.01em;
@@ -11540,6 +11606,48 @@ textarea {
 
   .social__list > li > a:hover {
     background: #808080;
+  }
+
+  .advantages__list li.advantages__list-last {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .advantages__list li.advantages__list-last .advantages__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 51px;
+  }
+
+  .advantages__list li.advantages__list-last .advantages__list-title {
+    max-width: none;
+    margin-right: 18px;
+  }
+
+  .advantages__list li.advantages__list-last .advantages__list-subtitle {
+    max-width: none;
+    margin-right: 18px;
+  }
+
+  .advantages__list li.advantages__list-last .advantages__list-icon {
+    position: static;
+    top: 0%;
+    right: 0;
+    z-index: 1;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+    height: auto;
+  }
+
+  .advantages__list li.advantages__list-last .advantages__list-icon img {
+    height: auto;
+    width: auto;
   }
 
   .advantages__partners li:nth-child(2) img {
@@ -12619,6 +12727,29 @@ textarea {
     margin-bottom: 4px;
   }
 
+  .advantages__list li.advantages__list-last .advantages__list-title {
+    max-width: 240px;
+  }
+
+  .advantages__list li.advantages__list-last .advantages__list-subtitle {
+    max-width: 265px;
+  }
+
+  .advantages__list li.advantages__list-last .advantages__list-icon {
+    height: auto;
+    width: calc(100% - 40px);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    right: 0;
+  }
+
+  .advantages__list li.advantages__list-last .advantages__list-icon img {
+    height: auto;
+    width: 100%;
+  }
+
   .advantages__list-icon {
     right: 20px;
     height: 85%;
@@ -12807,6 +12938,27 @@ textarea {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 10rem;
             flex: 0 0 10rem;
+  }
+
+  .popup-message .popup_content {
+    padding: 50px 14px;
+    text-align: center;
+  }
+
+  .message__img {
+    height: auto;
+    width: auto;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .message__title.title-3 {
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+
+  .message__text.text-content {
+    font-size: 16px;
   }
 
   .title-1 {
